@@ -1,128 +1,128 @@
-	 <!DOCTYPE html>
-		<html lang="ru">
-		  <head>
-		    <meta charset="utf-8">
-			<title>Дизайн-студия - Нёрдс. Магазин готовых шаблонов.</title>
-		  </head>
-	 	      <body>
-				<header class="main-header">
-				  <div class="container">
-					<div class="header-top">
-					          <!--Логотип-->
-						<div class="header-logo">
-					        <a href="index.html">
-					        <img src="images/index-logo.png" width="200" height="100" alt="Дизайн-студия Нёрдс">
-					        </a>
-					    </div>
-					    <nav class="main-navigation">
-					       	<ul>
-					            <li>
-					              <a href="#">Студия</a>
-					            </li>
-					            <li>
-					              <a href="#">Клиенты</a>
-					            </li>
-					            <li>
-					              <a href="#">Магазин</a>
-					            </li>
-					            <li>
-					              <a href="#">Контакты</a>
-					            </li>		            
-					        </ul>
-					    </nav>
-					    <div class="user-basket">
-					        <img src="images/basket.png" width="30" height="30" alt="Корзина">
-					        <a class="basket" href="#">Корзина</a>
-					    </div>
-				    </div>					 
-					<div class="header-title">
-					  <h1>Магазин готовых шаблонов</h1>           
-					</div>
-				  </div>
-				</header>
-				<main class="container">
-				 	<!--Левый сайдбар -->            
-                  <aside class="catalog-sidebar">            
-                    <form name="selection" method="post" action="http://echo.htmlacademy.ru">
-                      
-                      <fieldset>
-                          <legend>Стоимость:</legend>
-                          <input type="range" value="0" max="15000"/>
-                          <label>От <input type="text" name="min_price" value="0"></label>
-                          <label>до <input type="text" name="max_price" value="15000"></label>
-                      </fieldset>
-                      <fieldset>
-                          <legend>Сетка:</legend>
-                          <label><input type="radio" name="grid-group" value="1">Адаптивная</label>
-                          <label><input type="radio" name="grid-group" value="0">Фиксированная</label>
-                          <label><input type="radio" name="grid-group" value="0">Резиновая</label>
-                      </fieldset>
-                      <fieldset>
-                          <legend>Особенности:</legend>
-                          <label><input type="checkbox" name="slider" value="1">Слайдер</label>
-                          <label><input type="checkbox" name="advantages" value="0">Блок преимуществ</label>
-                          <label><input type="checkbox" name="news" value="1">Новости</label>
-                          <label><input type="checkbox" name="gallery" value="0">Галерея</label>
-                          <label><input type="checkbox" name="basket" value="0">Корзина</label>
-                       </fieldset>
-                       <button type="submit" value="Показать">Показать</button>
-                    </form>  
-                  </aside>
-                  <section class="content">
-				  	<!--Сортировка --> 
-				  	<div class="sorting">
-				  	  <h2>Сортировать:</h2>	
-				  	  <ul class="sorting-type">
-				  	  	<li>По цене</li>
-				  	  	<li>По типу</li>
-				  	  	<li>По названию</li>
-					  </ul>
-					  <!--Стрелки для сортировки--> 
-					  <div class="arrow">
-						  <div class="arrow-up"></div>
-						  <div class="arrow-down"></div>
-					  </div>  
-					</div>
-					 <!--блок галлерея-->      
-			         <div class="gallery">			            
-			              <img src="image/sedona.jpg" width="100" height="400" alt="Сайт Sedona">
-			              <img src="image/pink.jpg" width="100" height="400" alt="Сайт Pink">
-			              <img src="image/barbershop.jpg" width="100" height="400" alt="Барбершоп Бородинский">
-			              <img src="image/bear.jpg" width="100" height="400" alt="Сайт Mishka">
-			              <img src="image/studies.jpg" width="100" height="400" alt="Учебный сайт">
-			              <img src="image/studies.jpg" width="100" height="400" alt="Сайт Кваст">
-			         </div>  
-			         <!--Страницы -->
-                    <ul class="pagination">
-    					<li class="current">1</li>
-    					<li><a href="#">2</a></li>
-   						<li><a href="#">3</a></li>
-    					<li class="next"><a href="#">Следующая</a></li>
-  					</ul>
-				  </section>
-					<section class="map">
-					    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.3	20894616354554!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4	696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0	YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1477	155626088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>	</iframe>
-					    <div class="map-contact">
-					    	<p>Nёrdz design studio</p>
-					    	Адрес: г. Санкт-Петербург,<br>
-					    	ул. Б. Конюшенная, д. 19/8<br>
-				            Телефон: +7 (812) 666-02-66
-				            <a class="btn red" href="#">Напишите нам</a>
-					    </div>
-				    </section>
-				</main>
-				<footer class="main-footer">
-				    <div class="container">
-				       <section class="footer-social">          
-				          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-				        </section>
-				    <div class="social-slogan">
-				        <p>Давайте дружить, это выгодно!</p>
-				        <p class="action">Скидка 10% для друзей из социальных сетей.</p>		         
-				        </div>
-				    </div>
-				</footer>
-			  </body>
-		</html>
+<!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия - Нёрдс. Магазин готовых шаблонов.</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="header-top">
+          <!--Логотип-->
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="images/index-logo.png" width="200" height="100" alt="Дизайн-студия Нёрдс">
+            </a>
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>               
+            </ul>
+          </nav>
+          <div class="user-basket">
+            <img src="images/basket.png" width="30" height="30" alt="Корзина">
+            <a class="basket" href="#">Корзина</a>
+          </div>
+        </div>           
+        <div class="header-title">
+          <h1>Магазин готовых шаблонов</h1>           
+        </div>
+      </div>
+    </header>
+    <main class="container">
+    <!--Левый сайдбар -->            
+      <aside class="catalog-sidebar">            
+        <form name="selection" method="post" action="http://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" value="0" max="15000"/>
+            <label>От <input type="text" name="min_price" value="0"></label>
+            <label>до <input type="text" name="max_price" value="15000"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <label><input type="radio" name="grid-group" value="1">Адаптивная</label>
+            <label><input type="radio" name="grid-group" value="0">Фиксированная</label>
+            <label><input type="radio" name="grid-group" value="0">Резиновая</label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <label><input type="checkbox" name="slider" value="1">Слайдер</label>
+            <label><input type="checkbox" name="advantages" value="0">Блок преимуществ</label>
+            <label><input type="checkbox" name="news" value="1">Новости</label>
+            <label><input type="checkbox" name="gallery" value="0">Галерея</label>
+            <label><input type="checkbox" name="basket" value="0">Корзина</label>
+          </fieldset>
+          <button type="submit" value="Показать">Показать</button>
+        </form>  
+      </aside>
+      <section class="content">
+      <!--Сортировка --> 
+        <div class="sorting">
+          <h2>Сортировать:</h2> 
+          <ul class="sorting-type">
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По названию</li>
+          </ul>
+          <!--Стрелки для сортировки--> 
+          <div class="arrow">
+            <div class="arrow-up"></div>
+            <div class="arrow-down"></div>
+          </div>  
+        </div>
+        <!--блок галлерея-->      
+        <div class="gallery">                  
+          <img src="image/sedona.jpg" width="100" height="400" alt="Сайт Sedona">
+          <img src="image/pink.jpg" width="100" height="400" alt="Сайт Pink">
+          <img src="image/barbershop.jpg" width="100" height="400" alt="Барбершоп Бородинский">
+          <img src="image/bear.jpg" width="100" height="400" alt="Сайт Mishka">
+          <img src="image/studies.jpg" width="100" height="400" alt="Учебный сайт">
+          <img src="image/studies.jpg" width="100" height="400" alt="Сайт Кваст">
+        </div>  
+        <!--Страницы -->
+        <ul class="pagination">
+          <li class="current">1</li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li class="next"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.3  20894616354554!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4  696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0  YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1477  155626088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen> 
+        </iframe>
+        <div class="map-contact">
+          <p>Nёrdz design studio</p>
+          Адрес: г. Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          Телефон: +7 (812) 666-02-66
+          <a class="btn red" href="#">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">          
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <div class="social-slogan">
+          <p>Давайте дружить, это выгодно!</p>
+          <p class="action">Скидка 10% для друзей из социальных сетей.</p>             
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
