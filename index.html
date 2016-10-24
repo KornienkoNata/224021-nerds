@@ -16,7 +16,7 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="#">Студия</a>
+                Студия 
               </li>
               <li>
                 <a href="#">Клиенты</a>
@@ -30,100 +30,112 @@
             </ul>
           </nav>
           <div class="user-basket">
-            <img src="images/basket.png" width="30" height="30" alt="Корзина">
             <a class="basket" href="#">Корзина</a>
           </div>
         </div>
         <!--Нижняя половина хедера-->
-        <div class="header-bottom">
-        <!--Левая половина нижней части хедера-->
-          <div class="promo">
-            <div class="promo-slogan">
+        <div class="header-bottom">         
+          <div class="сontain">
+            <div class="contain current">
               <h2>Долго, дорого, скрупулезно.</h2>
-            </div>
-            <div class="promo-text">
+              <!--Мне кажется это контентное изображение-->
+              <img src="images/main1.png" width="300" height="200" alt="Дизайн для вашего сайта или мобильного приложения"> 
               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p> 
             </div>
-              <a class="btn red" href="#" title="Узнать больше">Узнать больше</a>
+            <div class="contain">
+              <h2>Любим математику как никто другой</h2>
+              <img src="images/main2.png" width="300" height="200" alt="Дизайн для вашего сайта или мобильного приложения">
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            </div>
+            <div class="contain">
+              <h2>Только ночь,только хардкор</h2>
+              <img src="images/main3.png" width="300" height="200" alt="Дизайн  для вашего сайта или мобильного приложения">
+              <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+            </div>
+            <a class="btn red" href="#" title="Узнать больше">Узнать больше</a>
           </div>
-            <!--Картинка хедера-->
-          <div class="header-img">
-            <img src="images/main.png" width="300" height="200" alt="Дизайн для вашего сайта или мобильного приложения">    
-          </div>
+          <!--тоглы переключения слайдов-->
+          <ul class="navbar">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
       </div>
     </header>
     <main class="container">
       <section class="services">
-        <ul>
-          <li class="services-item">
-          <figure class="image">
+        <div class="services-item">
+          <figure class="service-img">
             <img src="images/1.jpg" alt="Веб-сайты" width="120" height="70">
-            <figcaption>Веб-сайты</figcaption>
           </figure>                   
+          <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
           <a class="btn red" href="#" title="Заказать">Заказать</a>
-          </li>
-          <li class="services-item">
-            <figure class="image">
-              <img src="images/2.jpg" alt="Веб-сайты" width="120" height="70">
-              <figcaption>Приложения</figcaption>
-            </figure>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="btn green" href="#" title="Заказать">Заказать</a>
-          </li>
-          <li class="services-item">
-            <figure class="image">
-              <img src="images/3.jpg" alt="Веб-сайты" width="120" height="70">
-              <figcaption>Презентации</figcaption>
-            </figure>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="btn yellow" href="#" title="Заказать">Заказать</a>
-          </li>
-        </ul>
+        </div>
+        <div class="services-item">
+          <figure class="service-img">
+            <img src="images/2.jpg" alt="Приложения" width="120" height="70">
+          </figure>
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn green" href="#" title="Заказать">Заказать</a>
+        </div>
+        <div class="services-item">
+          <figure class="service-img">
+            <img src="images/3.jpg" alt="Презентации" width="120" height="70">
+          </figure>
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn yellow" href="#" title="Заказать">Заказать</a>
+        </div>
       </section>
       <!--Блок о студии-->
       <div class="content"> 
-        <article class="left">          
-          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <article class="description">          
+          <header>
+            <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          </header>
           <p>Исповедуем принцивы минимализма и чистоты. Ставим математический расчет превыше креатива.  Работаем не покладая рук, как роботы.</p>              
-          <p class="text">Выполняем заказы на разработку:</p>
+          <b>Выполняем заказы на разработку:</b>
           <ul class="apps">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентация</li>
           </ul>             
         </article>  
-        <aside class="right">
+        <section class="about-us">
           <div class="content-logo">
             <img src="images/content-logo.png" width="200" height="100" alt="Дизайн-студия Нёрдс">
           </div>
-          <p class="text">C 2004 года любим точность во всем:</p>
-          <table class="achievements">
-            <tr>
-              <td>146<sup>%</sup></td>
-              <td>100<sup>%</sup></td>
-              <td>50<sup>%</sup></td>
-            </tr>
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
-            </tr>
-          </table>    
-        </aside>
+          <b>C 2004 года любим точность во всем:</b>
+          <div class="features">
+            <div class="features-item">
+              <h2>146<sup>%</sup></h2>
+              <p>Уровень самоотдачи</p>
+            </div>
+            <div class="features-item">
+              <h2>100<sup>%</sup></h2>
+              <p>Соблюдение сроков</p>
+            </div>
+            <div class="features-item">
+              <h2>50<sup>%</sup></h2>
+              <p>Минимальная предоплата</p>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="templates">   
-        <div class="templates-item">   
+      <div class="projects">   
+        <div class="projects-item">   
           <img src="images/5.png" width="100" height="100" alt="HtmlAcademy">
         </div>            
-        <div class="templates-item">   
+        <div class="projects-item">   
           <img src="images/6.png" width="100" height="100" alt="Borodinski">
         </div>
-        <div class="templates-item">   
+        <div class="projects-item">   
           <img src="images/7.png" width="100" height="100" alt="Pink">
         </div>
-        <div class="templates-item">   
+        <div class="projects-item">   
           <img src="images/8.png" width="100" height="100" alt="Mishka">
         </div>                                    
       </div>
@@ -139,6 +151,26 @@
         </div>
       </section>
     </main>
+    <!--Всплывающий блок обратной связи-->
+    <div class="feedback">
+      <h2>Напишите нам</h2>      
+      <form class="feedback-form" action="/keksby-mail" method="post">
+        <div class="feedback-form-group">
+          <label for="fullname">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="feedback-form-group">
+          <label for="email">Ваш e-mail: </label>
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+        </div>
+        <div class="feedback-form-group">
+          <label for="message">Текст письма: </label>
+          <textarea  name="message" id="message" rows="15" cols="100" placeholder="В свободной форме">
+          </textarea>
+        </div>
+        <button class="submit red" type="submit">Отправить</button>
+      </form>
+    </div>
     <footer class="main-footer">
       <div class="container">
         <section class="footer-social">          
@@ -148,7 +180,7 @@
         </section>
         <div class="social-slogan">
           <p>Давайте дружить, это выгодно!</p>
-          <p class="action">Скидка 10% для друзей из социальных сетей.</p>             
+          <p class="action">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
