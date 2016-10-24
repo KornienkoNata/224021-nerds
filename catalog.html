@@ -22,24 +22,24 @@
               <li>
                 <a href="#">Клиенты</a>
               </li>
-              <li class="current">
+              <li class="menu-item-current">
                 Магазин
               </li>
               <li>
                 <a href="#">Контакты</a>
-              </li>               
+              </li>
             </ul>
           </nav>
           <div class="user-basket">
-             <a class="basket" href="#">Корзина</a>
+            <a class="basket" href="#">Корзина</a>
           </div>
-        </div>                   
+        </div>
         <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main class="container">
-    <!--Левый сайдбар -->            
-      <aside class="catalog-sidebar">            
+    <!--Левый сайдбар -->
+      <aside class="catalog-sidebar">
         <form name="selection" method="post" action="http://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
@@ -62,25 +62,29 @@
             <label><input type="checkbox" name="basket" value="basket">Корзина</label>
           </fieldset>
           <button class="submit gray" type="submit">Показать</button>
-        </form>  
+        </form>
       </aside>
       <section class="content">
-      <!--Сортировка --> 
+      <!--Сортировка -->
         <div class="sorting">
-          <h2>Сортировать:</h2> 
-          <ul class="sorting-type">
-            <li class="current"><a href="#">По цене</a></li>
+          <h2>Сортировать:</h2>
+          <ul class="sorting-list sorting-list-type">
+            <li class="sorting-item-current"><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
           </ul>
-          <!--Стрелки для сортировки--> 
-          <ul class="arrow">  
-            <a href="#" class="up current"></a><!--Может их в предудыщий ul вклинить?-->
-            <a href="#" class="down"></a>
-          </ul>  
+          <!--Стрелки для сортировки-->
+          <ul class="sorting-list sorting-list-direction">
+            <li>
+              <a class="sorting-item-up sorting-item-current"></a>
+            </li>
+            <li>
+             <a class="sorting-item-down sorting-item-current"></a>
+            </li>
+          </ul>
         </div>
-        <!--блок карточек сайтов-->      
-        <div class="templates">                  
+        <!--блок карточек сайтов-->
+        <div class="templates">
           <div class="templates-item">
             <!--тоглы переключения слайдов-->
             <ul class="switch">
@@ -93,7 +97,7 @@
               <!--По спецификации - название это ссылка-->
               <a href="#"><h2>Sedona</h2></a>
               <p>Информационный сайт для туристов</p>
-              <a class="btn red" href="#" title="Цена">9 900 руб.</a>
+              <a class="btn btn-red" href="#" title="Цена">9 900 руб.</a>
             </div>
           </div>
 
@@ -108,10 +112,10 @@
             <div class="price hidden">
               <a href="#"><h2>Pink App</h2></a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="btn red" href="#" title="Цена">9 900 руб.</a>
+              <a class="btn btn-red" href="#" title="Цена">9 900 руб.</a>
             </div>
           </div>
-          
+
           <div class="templates-item">
             <!--тоглы переключения слайдов-->
             <ul class="switch">
@@ -123,10 +127,10 @@
             <div class="price hidden">
               <a href="#"><h2>Barbershop</h2></a>
               <p>Сайт салоны красоты. Для мужчин, да</p>
-              <a class="btn red" href="#" title="Цена">9 900 руб.</a>
+              <a class="btn btn-red" href="#" title="Цена">9 900 руб.</a>
             </div>
           </div>
-          
+
           <div class="templates-item">
             <!--тоглы переключения слайдов-->
             <ul class="switch">
@@ -138,10 +142,10 @@
             <div class="price hidden">
               <a href="#"><h2>Mishka</h2></a>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="btn red" href="#" title="Цена">9 900 руб.</a>
+              <a class="btn btn-red" href="#" title="Цена">9 900 руб.</a>
             </div>
           </div>
-          
+
           <div class="templates-item">
             <!--тоглы переключения слайдов-->
             <ul class="switch">
@@ -153,10 +157,10 @@
             <div class="price hidden">
               <a href="#"><h2>A Plus</h2></a>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="btn red" href="#" title="Цена">9 900 руб.</a>
+              <a class="btn btn-red" href="#" title="Цена">9 900 руб.</a>
             </div>
           </div>
-         
+
          <div class="templates-item">
             <!--тоглы переключения слайдов-->
             <ul class="switch">
@@ -169,37 +173,37 @@
               <a href="#"><h2>Кваст</h2></a>
               <p>Промо-сайт производителя крафтового кваса</p>
               <!--Кнопки все разные или мне показалось? -->
-              <a class="btn 3d" href="#" title="Цена">9 900 руб.</a>
+              <a class="btn btn-3d" href="#" title="Цена">9 900 руб.</a>
             </div>
           </div>
-        </div>  
+        </div>
         <!--Страницы -->
         <ul class="pagination">
-          <li class="current">1</li>
+          <li class="list-current">1</li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li class="next"><a href="#">Следующая</a></li>
         </ul>
       </section>
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.3  20894616354554!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4  696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0  YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1477  155626088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.3  20894616354554!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4  696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0  YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1477  155626088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
         </iframe>
         <div class="map-contact">
           <p>Nёrdz design studio</p>
           Адрес: г. Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8<br>
           Телефон: +7 (812) 666-02-66
-          <a class="btn red" href="#">Напишите нам</a>
+          <a class="btn btn-red" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
     <!--Всплывающий блок обратной связи-->
     <div class="feedback">
-      <h2>Напишите нам</h2>      
-      <form class="feedback-form" action="/keksby-mail" method="post">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form-group">
           <label for="fullname">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="feedback-form-group">
           <label for="email">Ваш e-mail: </label>
@@ -210,12 +214,12 @@
           <textarea  name="message" id="message" rows="15" cols="100" placeholder="В свободной форме">
           </textarea>
         </div>
-        <button class="submit red" type="submit">Отправить</button>
+        <button class="submit" type="submit">Отправить</button>
       </form>
     </div>
     <footer class="main-footer">
       <div class="container">
-        <section class="footer-social">          
+        <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
