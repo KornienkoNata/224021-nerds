@@ -1,10 +1,31 @@
-    размер шрифта,
-    высоту строки,
-    цвет шрифта,
-    жирность шрифта,
-    гарнитуру (название шрифта).
-body {
-  color: #000000;
-  font-family: Trebuchet MS, Arial, Times New Roman;
-  font-size: 12px;
+@font-face{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto'),
+       url('/fonts/roboto.woff2') format('woff2'),
+       url('/fonts/robotomedium.woff2') format('woff2'),
+       url('/fonts/roboto.woff') format('woff'),
+       url('/fonts/robotomedium.woff') format('woff'),
 }
+
+body {
+  font-family: 'Roboto','Arial', 'Helvetica', 'sans-serif';
+  font-size: 16px;
+  background: #ffffff;
+  color: #000000
+}
+
+.header-bottom h2{
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.header-bottom p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
