@@ -16,7 +16,6 @@
        url('/fonts/robotomedium.woff2') format('woff2'),
 }
 
-
 body {
   font-family: 'Roboto','Arial', 'Helvetica', 'sans-serif';
   font-size: 16px;
