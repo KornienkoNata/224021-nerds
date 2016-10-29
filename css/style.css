@@ -42,99 +42,130 @@ body {
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
+
 }
 
 .main-header {
   margin-bottom: 80px;
+  background-color: #eeeeee;
+  padding-top: 1px;
+
 }
 
-.header-top{
-  min-height: 114px;
-  /*background: red;*/
+.header-top {
+  margin-top: 49px;
+
+
+}
+
+.main-header h1 {
+  text-align: center;
+  padding-bottom: 102px;
+
 }
 
 .header-logo {
-  height: 65px;
+  min-height: 65px;
   width: 161px;
-  float:left;
-  margin-top: 49px;
+  float: left;
 }
 
 .main-navigation {
   float: left;
-  width: 780;
-  /*background: green; */
-  margin-left: 20px;
+  margin-left: 161px;
 
-  /* Только для оформления сетки */
-  min-height: 114px;
 }
-.main-navigation li{
+
+.main-navigation li {
   display: inline-block;
+  margin-right: 41px;
+  vertical-align: top;
+  text-transform:  uppercase;
+  padding-top: 10px;
+
+}
+
+.main-navigation li a,.user-basket a {
+  text-decoration: none;
+  color: #000;
+
 }
 
 .user-basket {
-  width: 180;
+  width: 140px;
   float: right;
-  /*background: green;*/
+  text-transform:  uppercase;
+  padding-top:26px;
 
-  /* Только для оформления сетки */
-  min-height: 114px;
 }
 
-.sliders{
-  position: relative;
-}
 
-.sliders h2{
-  position: absolute;
-}
-
-.sliders p{
-  position: absolute;
-  left:10px;
-  top:150px;
-}
+.slider2{
+  background: url(../img/slider-2.jpg) no-repeat right top;
+  height: 431px;
+  }
 
 .sliders img{
-  position: absolute;
-  left:400px;
-  top: 0px;
-  z-index: -1;
+
 }
 
-.slider .btn-red{
-  position: absolute;
-  left:10px;
-  top:250px;
+
+.sliders h2 {
+padding-top: 100px;
+display: block;
+width: 522px;
+height: 124px;
 }
 
- .header-slider-switch{
+.sliders p {
+
+}
+
+
+
+.sliders img {
+
+}
+
+.btn{
+    display: block;
+    height: 50;
+    width:240px;
+    background: #fb565a;
+
+   background: blac
+}
+
+ .header-slider-switch {
   position: absolute;
   left:504px;
   top:298px;
+
 }
 
-.header-slider-switch li{
+.header-slider-switch li {
   display: inline-block;
+
 }
 
-.header-slider-switch a{
+.header-slider-switch a {
   display: inline-block;
   padding: 10px;
   margin: 5px;
   background: white;
   text-decoration: none;
   border-radius: 10px;
+
 }
 
-.services{
+.services {
   /*background: #00BFFF;*/
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 40px;
+
 }
 
-.services-item{
+.services-item {
   float: left;
   width: 300px;
   margin-right: 100px;
@@ -144,7 +175,7 @@ body {
   padding-bottom: 80px;
 }
 
-.service-img{
+.service-img {
   margin: 0px;
 }
 
@@ -152,22 +183,21 @@ body {
   margin-right: 0px;
 }
 
-.header-bottom{
-  height: 431px;
-}
 
 .header-bottom h2 {
   font-size: 55px;
   line-height: 1;
   font-weight: 500;
+
 }
 
 .header-bottom p {
   font-size: 16px;
   line-height: 1.5;
+
 }
 
-.content{
+.content {
   border-bottom: 2px solid #eeeeee;
   /*background: #98FB98;*/
   margin-bottom: 46px;
@@ -176,27 +206,27 @@ body {
   padding-bottom: 77px;
 }
 
-.description{
+.description {
   float: left;
   width: 700px;
 }
 
-.description h2{
+.description h2 {
   font-size: 42px;
   line-height: 1;
 }
 
-.about-us{
+.about-us {
   float: right;
   width: 400px;
 }
 
-.features-item{
+.features-item {
   display: inline-block;
   width: 130px;
 }
 
-.projects{
+.projects {
   /*background: #CD853F;*/
   padding-bottom: 44px;
   border-bottom: 2px solid #eeeeee;
@@ -204,7 +234,7 @@ body {
 }
 
 
-.projects-item{
+.projects-item {
   float: left;
   width: 260px;
   margin-right: 40px;
@@ -217,7 +247,47 @@ body {
   margin-right: 0px;
 }
 
-.map{
+.catalog-sidebar {
+  float:left;
+  width: 260px;
+ }
+
+.catalog-content {
+  float: right;
+  width: 760px;
+}
+
+.sorting-list li {
+  display: inline-block;
+  margin-right: 28px;
+}
+
+.sorting h2 {
+  display: inline-block;
+  float: left;
+}
+
+.sorting-list {
+  float: left;
+}
+
+.sorting-item-down {
+  background: url(../img/sort-down.png) no-repeat 21px 21px;
+}
+
+.sorting-item-up {
+  background: url(../img/sort-up.png) no-repeat 21px 21px;
+}
+
+.sorting-list-direction{
+  display: inline-block;
+
+}
+
+.sorting {
+
+}
+.map {
   position: relative;
   margin-bottom: 37px;
   height: 416px;
@@ -226,22 +296,22 @@ body {
 
 
 
-.map-contact .btn{
+.map-contact .btn {
   display: block;
 
   /*временно отступ*/
   padding-bottom: 48px;
 }
 
-.map iframe{
+.map iframe {
   width: 100%;
   height: 414px;
   border: 0px;
 }
 
-.map-contact{
+.map-contact {
   position: absolute;
-  left:370px;
+  left: 370px;
   top: 1794px;/*больше никак не получилось привязать к месту этот блок, проценты тоже не помогли*/
   width: 319px;
   padding-top: 54px;
@@ -252,20 +322,20 @@ body {
   z-index: 1;
 }
 
-.feedback{
+.feedback {
   display: block;
   width: 960px;
   height: 590px;
-  padding-left 100px;
-  padding-top:68px;
+  padding-left: 100px;
+  padding-top: 68px;
   /*background: #E6E6FA;*/
 }
 
-.footer-social{
-  float:left;
+.footer-social {
+  float: left;
   width: 320px;
 }
-.social-btn{
+.social-btn {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -287,12 +357,12 @@ body {
   background: url(../img/insta.png) no-repeat 21px 21px;
 }
 
-.social-slogan{
-  float:right;
-  width:800px;
+.social-slogan {
+  float: right;
+  width: 800px;
 }
 
-.main-footer{
+.main-footer {
   margin-bottom: 58px;
 }
 
