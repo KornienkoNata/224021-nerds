@@ -199,7 +199,7 @@ body {
 .projects{
   /*background: #CD853F;*/
   padding-bottom: 44px;
-  border-bottom: 20px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
 }
 
@@ -235,7 +235,7 @@ body {
 
 .map iframe{
   width: 100%;
-  height: 414;
+  height: 414px;
   border: 0px;
 }
 
