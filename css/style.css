@@ -32,6 +32,129 @@ body {
   color: #000000
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.header-top{
+  min-height: 114px;
+  background: red;
+}
+
+.header-logo {
+  height: 65px;
+  width: 161px;
+  float:left;
+  margin-top: 49px;
+}
+
+.main-navigation {
+  float: left;
+  width: 780;
+  background: green;
+  margin-left: 20px;
+    /* Только для оформления сетки */
+  min-height: 114px;
+}
+.main-navigation li{
+  display: inline-block;
+}
+.user-basket {
+  width: 180;
+  float: right;
+  background: green;
+
+  /* Только для оформления сетки */
+  min-height: 114px;
+}
+
+
+.sliders{
+  position: relative;
+}
+
+.sliders h2{
+  position: absolute;
+}
+
+.sliders p{
+  position: absolute;
+  left:10px;
+  top:150px;
+}
+
+.sliders img{
+  position: absolute;
+  left:400px;
+  top: 0px;
+  z-index: -1;
+}
+
+.slider .btn-red{
+  position: absolute;
+  left:10px;
+  top:250px;
+}
+
+ .header-slider-switch{
+  position: absolute;
+  left:504px;
+  top:298px;
+}
+
+.header-slider-switch li{
+display: inline-block;
+}
+
+.header-slider-switch a{
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.services{
+ background: #00BFFF;
+ border-bottom: 2px solid #eeeeee;
+ margin-bottom: 40px;
+}
+
+.services-item{
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  background: #8A2BE2;
+
+  /*временно, пока кнопку не сделаю*/
+  padding-bottom: 80px;
+}
+
+.service-img{
+  margin: 0px;
+}
+
+.services-item:last-child {
+margin-right: 0px;
+}
+
+.header-bottom{
+  height: 431px;
+}
+
 .header-bottom h2 {
   font-size: 55px;
   line-height: 1;
@@ -43,8 +166,254 @@ body {
   line-height: 1.5;
 }
 
+.content{
+ border-bottom: 2px solid #eeeeee;
+ background: #98FB98;
+ margin-bottom: 46;
+
+ /*временно, отступ от списка*/
+  padding-bottom: 77px;
+}
+
+.description{
+float: left;
+width: 700px;
+}
+
+.description h2{
+  font-size: 42px;
+  line-height: 1;
+}
+
+.about-us{
+  float: right;
+  width: 400px;
+}
+
+.features-item{
+  display: inline-block;
+  width: 130px;
+}
+
+.projects{
+background: #CD853F;
+padding-bottom: 44px;
+border-bottom: 20px solid #eeeeee;
+margin-bottom: 80px;
+}
+
+
+.projects-item{
+  float: left;
+  width: 260px;
+  margin-right: 40px;
+  background: #8A2BE2;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.projects-item:last-child {
+margin-right: 0px;
+}
+
+.map{
+  position: relative;
+  margin-bottom: 37px;
+}
 
 
 
 
+.map-contact .btn{
+  display: block;
 
+  /*временно отступ*/
+  padding-bottom: 48px;
+}
+
+.map iframe{
+  width: 100%;
+  height: 414;
+  border: 0px;
+}
+
+.map-contact{
+  position: absolute;
+  left:0px;
+  top: 1194px;/*больше никак не получилось привязать к месту этот блок, проценты тоже не помогли*/
+  width: 319px;
+  padding-top: 54px;
+  padding-left: 50px;
+  margin: 0 auto;
+  background: white;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.feedback{
+  display: block;
+  width: 960px;
+  height: 590px;
+  padding-left 100px;
+  padding-top:68px;
+  background: #E6E6FA;
+}
+
+.footer-social{
+  float:left;
+  width: 320px;
+}
+.social-btn{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  vertical-align: middle;
+  border-radius: 80px;
+  background: #e1e1e1;
+}
+
+.social-btn .social-btn-vk {
+  background: url(../img/vk.png) no-repeat 26px 15px;
+}
+
+.social-btn .social-btn-fb {
+  background: url(../img/fb.png) no-repeat 12px 22px;
+}
+
+.social-btn .social-btn-insta {
+  background: url(../img/insta.png) no-repeat 21px 21px;
+}
+
+.social-slogan{
+  float:right;
+  width:800px;
+}
+
+.main-footer{
+  margin-bottom: 58px;
+}
+
+[hidden] { display: none; }
+
+/*это не знаю как убрать плашку гугл-карты*/
+.place-card .place-card-large
+{
+    visibility: hidden !important;
+}
+
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.index-logo::before {
+  content: ".index-logo";
+}
+
+.services::before {
+  content: ".services";
+  top: -28px;
+}
+
+.services-item::before {
+  content: ".services-item";
+}

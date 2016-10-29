@@ -6,10 +6,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <!-- ---------------------------------------------------------------------------------- -->
     <header class="main-header">
       <div class="container">
       <!--Верхняя половина хедера-->
-        <div class="header-top">
+        <div class="header-top clearfix">
         <!--Логотип-->
           <div class="header-logo">
             <img src="img/header-logo.png" width="160" height="65" alt="Дизайн-студия Нёрдс">
@@ -36,38 +37,42 @@
         </div>
         <!--Нижняя половина хедера-->
         <div class="header-bottom">
-          <div class="sliders">
-            <div class="slider slider-current">
-              <h2>Долго, дорого, скрупулезно.</h2>
+          <div class="sliders clearfix">
+            <div class="slider slider-current" hidden>
+              <h2>Долго, дорого,<br> скрупулезно.</h2>
               <!--Мне кажется это контентное изображение-->
               <img src="img/slider-1.jpg" width="760" height="431" alt="Дизайн для вашего сайта или мобильного приложения">
               <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения</p>
               <a class="btn btn-red" href="#" title="Узнать больше">Узнать больше</a>
             </div>
             <div class="slider">
-              <h2>Любим математику как никто другой</h2>
+              <h2>Любим математику<br> как никто другой</h2>
               <img src="img/slider-2.jpg" width="760" height="431" alt="Дизайн для вашего сайта или мобильного приложения">
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
               <a class="btn btn-red" href="#" title="Узнать больше">Узнать больше</a>
             </div>
-            <div class="slider">
+            <div class="slider" hidden>
               <h2>Только ночь,только хардкор</h2>
               <img src="img/slider-3.jpg" width="760" height="431" alt="Дизайн  для вашего сайта или мобильного приложения">
               <p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
               <a class="btn btn-red" href="#" title="Узнать больше">Узнать больше</a>
             </div>
+          <ul class="header-slider-switch">
+            <li class="switch-current"><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
           </div>
           <!--тоглы переключения слайдов-->
-          <ul class="header-slider-switch">
-            <li class="switch-current"></li>
-            <li></li>
-            <li></li>
-          </ul>
+
         </div>
       </div>
     </header>
-    <main class="container">
-      <section class="services">
+
+  <!-- ---------------------------------------------------------------------------------- -->
+    <main class="main-container">
+      <div class="container">
+      <section class="services clearfix">
         <div class="services-item">
           <figure class="service-img">
             <img src="img/service1.jpg" alt="Веб-сайты" width="300" height="146">
@@ -94,7 +99,7 @@
         </div>
       </section>
       <!--Блок о студии-->
-      <div class="content">
+      <div class="content clearfix">
         <article class="description">
           <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принцивы минимализма и чистоты. Ставим математический расчет превыше креатива.  Работаем не покладая рук, как роботы.</p>
@@ -126,7 +131,7 @@
           </div>
         </section>
       </div>
-      <div class="projects">
+      <div class="projects clearfix">
         <div class="projects-item">
           <img src="img/project1.png" width="199" height="68" alt="HtmlAcademy">
         </div>
@@ -140,20 +145,23 @@
           <img src="img/project4.png" width="199" height="68" alt="Mishka">
         </div>
       </div>
-      <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.3  20894616354554!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4  696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0  YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1477  155626088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
-        </iframe>
-        <div class="map-contact">
+      <div class="map-contact">
           <p>Nёrdz design studio</p>
           Адрес: г. Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8<br>
           Телефон: +7 (812) 666-02-66
           <a class="btn btn-red" href="#">Напишите нам</a>
         </div>
+     </div>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.3  20894616354554!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4  696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0  YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1477  155626088">
+        </iframe>
       </section>
+
     </main>
+
     <!--Всплывающий блок обратной связи-->
-    <div class="feedback">
+    <div class="feedback" hidden>
       <h2>Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form-group">
@@ -173,11 +181,11 @@
       </form>
     </div>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#" title="Вконтакте"></a>
+          <a class="social-btn social-btn-fb" href="#" title="Фейсбук"></a>
+          <a class="social-btn social-btn-inst" href="#" title="Инстаграм"></a>
         </section>
         <div class="social-slogan">
           <p>Давайте дружить, это выгодно!</p>
