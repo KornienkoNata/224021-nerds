@@ -50,7 +50,7 @@ body {
 
 .header-top{
   min-height: 114px;
-  background: red;
+  /*background: red;*/
 }
 
 .header-logo {
@@ -63,23 +63,24 @@ body {
 .main-navigation {
   float: left;
   width: 780;
-  background: green;
+  /*background: green; */
   margin-left: 20px;
-    /* Только для оформления сетки */
+
+  /* Только для оформления сетки */
   min-height: 114px;
 }
 .main-navigation li{
   display: inline-block;
 }
+
 .user-basket {
   width: 180;
   float: right;
-  background: green;
+  /*background: green;*/
 
   /* Только для оформления сетки */
   min-height: 114px;
 }
-
 
 .sliders{
   position: relative;
@@ -115,7 +116,7 @@ body {
 }
 
 .header-slider-switch li{
-display: inline-block;
+  display: inline-block;
 }
 
 .header-slider-switch a{
@@ -128,16 +129,16 @@ display: inline-block;
 }
 
 .services{
- background: #00BFFF;
- border-bottom: 2px solid #eeeeee;
- margin-bottom: 40px;
+  /*background: #00BFFF;*/
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 40px;
 }
 
 .services-item{
   float: left;
   width: 300px;
   margin-right: 100px;
-  background: #8A2BE2;
+  /*background: #8A2BE2;*/
 
   /*временно, пока кнопку не сделаю*/
   padding-bottom: 80px;
@@ -148,7 +149,7 @@ display: inline-block;
 }
 
 .services-item:last-child {
-margin-right: 0px;
+  margin-right: 0px;
 }
 
 .header-bottom{
@@ -167,17 +168,17 @@ margin-right: 0px;
 }
 
 .content{
- border-bottom: 2px solid #eeeeee;
- background: #98FB98;
- margin-bottom: 46;
+  border-bottom: 2px solid #eeeeee;
+  /*background: #98FB98;*/
+  margin-bottom: 46px;
 
  /*временно, отступ от списка*/
   padding-bottom: 77px;
 }
 
 .description{
-float: left;
-width: 700px;
+  float: left;
+  width: 700px;
 }
 
 .description h2{
@@ -196,10 +197,10 @@ width: 700px;
 }
 
 .projects{
-background: #CD853F;
-padding-bottom: 44px;
-border-bottom: 20px solid #eeeeee;
-margin-bottom: 80px;
+  /*background: #CD853F;*/
+  padding-bottom: 44px;
+  border-bottom: 20px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
 
@@ -207,18 +208,19 @@ margin-bottom: 80px;
   float: left;
   width: 260px;
   margin-right: 40px;
-  background: #8A2BE2;
+  /*background: #8A2BE2;*/
   vertical-align: middle;
   text-align: center;
 }
 
 .projects-item:last-child {
-margin-right: 0px;
+  margin-right: 0px;
 }
 
 .map{
   position: relative;
   margin-bottom: 37px;
+  height: 416px;
 }
 
 
@@ -239,8 +241,8 @@ margin-right: 0px;
 
 .map-contact{
   position: absolute;
-  left:0px;
-  top: 1194px;/*больше никак не получилось привязать к месту этот блок, проценты тоже не помогли*/
+  left:370px;
+  top: 1794px;/*больше никак не получилось привязать к месту этот блок, проценты тоже не помогли*/
   width: 319px;
   padding-top: 54px;
   padding-left: 50px;
@@ -256,7 +258,7 @@ margin-right: 0px;
   height: 590px;
   padding-left 100px;
   padding-top:68px;
-  background: #E6E6FA;
+  /*background: #E6E6FA;*/
 }
 
 .footer-social{
@@ -304,116 +306,3 @@ margin-right: 0px;
 
 
 
-
-/*======================================
- Системное оформление - не изменять
-=======================================*/
-
-body {
-  padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  content: "";
-  position: absolute;
-
-  height: 24px;
-  padding: 2px 5px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Courier New", monotype;
-  white-space: nowrap;
-}
-
-body > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > *::before {
-  color: white;
-
-  background: rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
-}
-
-body > * > * > *::before {
-  color: black;
-
-  background: rgb(234, 255, 45);
-}
-
-.main-header::before {
-  content: ".main-header";
-}
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
-
-.main-navigation::before {
-  content: ".main-navigation";
-}
-
-.user-block::before {
-  content: ".user-block";
-}
-
-.index-logo::before {
-  content: ".index-logo";
-}
-
-.services::before {
-  content: ".services";
-  top: -28px;
-}
-
-.services-item::before {
-  content: ".services-item";
-}
