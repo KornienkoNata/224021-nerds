@@ -42,164 +42,149 @@ body {
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
-
 }
 
 .main-header {
   margin-bottom: 80px;
-  background-color: #eeeeee;
   padding-top: 1px;
-
+  background-color: #eeeeee;
 }
 
 .header-top {
   margin-top: 49px;
-
-
 }
 
 .main-header h1 {
-  text-align: center;
   padding-bottom: 102px;
-
+  text-align: center;
 }
 
 .header-logo {
-  min-height: 65px;
-  width: 161px;
   float: left;
+  width: 161px;
+  min-height: 65px;
+
 }
 
 .main-navigation {
   float: left;
   margin-left: 161px;
-
 }
 
 .main-navigation li {
   display: inline-block;
   margin-right: 41px;
+  padding-top: 10px;
   vertical-align: top;
   text-transform:  uppercase;
-  padding-top: 10px;
-
 }
 
 .main-navigation li a,.user-basket a {
   text-decoration: none;
   color: #000;
-
 }
 
 .user-basket {
-  width: 140px;
   float: right;
-  text-transform:  uppercase;
   padding-top:26px;
-
+  width: 140px;
+  text-transform:  uppercase;
 }
 
 
-.slider2{
-  background: url(../img/slider-2.jpg) no-repeat right top;
-  height: 431px;
+.slider1 {
+  padding-top: 70px;
+  height: 362px;
+  background: url(../img/slider-1.jpg) no-repeat right top;
   }
 
-.sliders img{
+.slider2 {
+  background: url(../img/slider-2.jpg) no-repeat right top;
+  height: 362px;
+  padding-top: 70px;
+  }
 
+.slider3 {
+  padding-top: 70px;
+  height: 362px;
+  background: url(../img/slider-2.jpg) no-repeat right top;
 }
-
 
 .sliders h2 {
-padding-top: 100px;
-display: block;
-width: 522px;
-height: 124px;
+  display: block;
+  margin:0px;
 }
 
-.sliders p {
-
+.sliders {
+  position: relative;
 }
 
 
-
-.sliders img {
-
+.btn {
+  display: block;
+  height: 50;
+  width:240px;
+  background: #fb565a;
 }
 
-.btn{
-    display: block;
-    height: 50;
-    width:240px;
-    background: #fb565a;
-
-   background: blac
-}
-
- .header-slider-switch {
+.header-slider-switch {
   position: absolute;
-  left:504px;
-  top:298px;
-
+  top:68%;
+  left: 48%;
+  transform: translateX(-50%);
 }
 
 .header-slider-switch li {
   display: inline-block;
-
+  vertical-align: middle;
 }
 
 .header-slider-switch a {
   display: inline-block;
   padding: 10px;
   margin: 5px;
+  vertical-align: middle;
+  border-radius: 10px;
   background: white;
   text-decoration: none;
-  border-radius: 10px;
-
 }
 
 .services {
-  /*background: #00BFFF;*/
-  border-bottom: 2px solid #eeeeee;
   margin-bottom: 40px;
-
+  border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
   float: left;
-  width: 300px;
   margin-right: 100px;
-  /*background: #8A2BE2;*/
+  width: 300px;
 
   /*временно, пока кнопку не сделаю*/
   padding-bottom: 80px;
 }
 
 .service-img {
-  margin: 0px;
+  margin: 0;
 }
 
 .services-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 
 .header-bottom h2 {
-  font-size: 55px;
   line-height: 1;
+  font-size: 55px;
   font-weight: 500;
-
 }
 
 .header-bottom p {
   font-size: 16px;
   line-height: 1.5;
-
 }
 
 .content {
   border-bottom: 2px solid #eeeeee;
-  /*background: #98FB98;*/
   margin-bottom: 46px;
 
  /*временно, отступ от списка*/
@@ -221,13 +206,18 @@ height: 124px;
   width: 400px;
 }
 
+.features {
+  font-size: 0px;
+}
+
 .features-item {
   display: inline-block;
   width: 130px;
+  vertical-align: top;
+  font-size: 16px;
 }
 
 .projects {
-  /*background: #CD853F;*/
   padding-bottom: 44px;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
@@ -236,9 +226,8 @@ height: 124px;
 
 .projects-item {
   float: left;
-  width: 260px;
   margin-right: 40px;
-  /*background: #8A2BE2;*/
+  width: 260px;
   vertical-align: middle;
   text-align: center;
 }
@@ -260,11 +249,13 @@ height: 124px;
 .sorting-list li {
   display: inline-block;
   margin-right: 28px;
+  vertical-align: middle;
 }
 
 .sorting h2 {
-  display: inline-block;
   float: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .sorting-list {
@@ -281,7 +272,7 @@ height: 124px;
 
 .sorting-list-direction{
   display: inline-block;
-
+  vertical-align: middle;
 }
 
 .sorting {
@@ -290,17 +281,12 @@ height: 124px;
 .map {
   position: relative;
   margin-bottom: 37px;
-  height: 416px;
+  height: 416px; /*это вроде не контентный блок, тут нужна высота?*/
 }
-
-
 
 
 .map-contact .btn {
   display: block;
-
-  /*временно отступ*/
-  padding-bottom: 48px;
 }
 
 .map iframe {
@@ -311,35 +297,34 @@ height: 124px;
 
 .map-contact {
   position: absolute;
-  left: 370px;
-  top: 1794px;/*больше никак не получилось привязать к месту этот блок, проценты тоже не помогли*/
-  width: 319px;
-  padding-top: 54px;
-  padding-left: 50px;
-  margin: 0 auto;
+  width: 270px;
+  top:10%;
+  left: 50%;
+  transform: translateX(-586px);
   background: white;
-  margin: 0 auto;
   z-index: 1;
+  padding-top: 54px;
+  padding-left: 49px;
 }
 
 .feedback {
-  display: block;
+  display: none;
   width: 960px;
   height: 590px;
   padding-left: 100px;
   padding-top: 68px;
-  /*background: #E6E6FA;*/
 }
 
 .footer-social {
   float: left;
   width: 320px;
 }
+
 .social-btn {
   display: inline-block;
+  margin-right: 12px;
   width: 80px;
   height: 80px;
-  margin-right: 12px;
   vertical-align: middle;
   border-radius: 80px;
   background: #e1e1e1;
@@ -368,11 +353,7 @@ height: 124px;
 
 [hidden] { display: none; }
 
-/*это не знаю как убрать плашку гугл-карты*/
-.place-card .place-card-large
-{
-    visibility: hidden !important;
-}
+
 
 
 
