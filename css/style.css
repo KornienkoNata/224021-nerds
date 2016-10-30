@@ -54,9 +54,12 @@ body {
   margin-top: 49px;
 }
 
-.main-header h1 {
-  padding-bottom: 102px;
-  text-align: center;
+.main-header-catalog h1 {
+  display: inline-block;
+  padding: 19px 0px 60px 216px;
+  vertical-align: middle;
+  font-size: 55px;
+  font-weight: 500;
 }
 
 .header-logo {
@@ -122,7 +125,7 @@ body {
 
 .btn {
   display: block;
-  height: 50;
+  height: 50px;
   width:240px;
   background: #fb565a;
 }
@@ -130,7 +133,7 @@ body {
 .header-slider-switch {
   position: absolute;
   top:68%;
-  left: 48%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -239,11 +242,13 @@ body {
 .catalog-sidebar {
   float:left;
   width: 260px;
+
  }
 
 .catalog-content {
   float: right;
   width: 760px;
+  margin-bottom: 50px;
 }
 
 .sorting-list li {
@@ -281,7 +286,7 @@ body {
 .map {
   position: relative;
   margin-bottom: 37px;
-  height: 416px; /*это вроде не контентный блок, тут нужна высота?*/
+  height: 416px;
 }
 
 
@@ -298,13 +303,13 @@ body {
 .map-contact {
   position: absolute;
   width: 270px;
+  padding-top: 54px;
+  padding-left: 49px;
   top:10%;
   left: 50%;
   transform: translateX(-586px);
   background: white;
   z-index: 1;
-  padding-top: 54px;
-  padding-left: 49px;
 }
 
 .feedback {
@@ -353,6 +358,216 @@ body {
 
 [hidden] { display: none; }
 
+
+.main-header-catalog {
+  padding-top: 1px;
+  margin-bottom: 26px;
+  background-color: #eeeeee;
+}
+
+.catalog-content {
+  float: right;
+  width: 760px;
+}
+
+.catalog-sidebar {
+  float:left;
+  margin-top: 30px;
+  width: 260px;
+ }
+
+.sorting-list {
+  display: block;
+  float: left;
+  padding-top: 10px;
+
+}
+
+.sorting h2 {
+  display: inline-block;
+  float: left;
+  vertical-align: bottom;
+}
+
+.sorting-list li {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 22px;
+}
+.sorting-list li:last-child {
+  margin-right: 0;
+}
+
+.sorting-list li a {
+  display: inline-block;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+
+.sorting-list-type {
+  margin-left: 202px;
+}
+
+.sorting-item-down {
+  display: inline-block;
+  background: url(../img/sort-down.png) no-repeat;
+  width: 9px;
+  height: 9px;
+}
+
+.sorting-item-up {
+  background: url(../img/sort-up.png) no-repeat;
+  width: 9px;
+  height: 9px;
+}
+
+.sorting-list-direction {
+  float: right;
+  padding-left: 0px;
+  padding-top: 4px;
+}
+
+.sorting-list-direction li {
+  margin-right: 10px;
+}
+
+.templates {
+  font-size: 0px;
+  margin-bottom: 60px;
+}
+
+.templates-item {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  margin-right: 40px;
+  margin-top: 40px;
+  background: #f4f4f4;
+  padding-top: 40px;
+  border-radius: 5px;
+}
+
+.templates-item:nth-child(even) {
+  margin-right: 0px;
+}
+.switch {
+  position: absolute;
+  top:5px;
+  left: 5px;
+}
+
+ul.switch {
+  padding-left: 5px;
+}
+
+
+.switch li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.switch a {
+  display: inline-block;
+  padding: 7px;
+  margin: 5px;
+  vertical-align: middle;
+  border-radius: 10px;
+  background: white;
+  text-decoration: none;
+}
+
+.price {
+  position: absolute;
+  display: none;
+  background: #eeeeee;
+  width: 360px;
+  height: 231px;
+  left:0px;
+  top:385px;
+  color: #000;
+  font-size: 16px;
+}
+
+.templates-item:hover .price {
+  display: block;
+}
+
+.pagination {
+  width: 443px;
+  padding-left: 0px;
+}
+
+.pagination li {
+  display: inline-block;
+  padding: 0px 11px;
+  min-width: 20px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #eeeeee;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #000;
+}
+
+.pagination .prev {
+
+}
+
+.pagination .next {
+  padding: 0px 60px;
+}
+
+.pagination .current {
+  background-color: #16a085;
+}
+
+.pagination .disabled {
+  opacity: 0.3;
+}
+
+.pagination a:hover {
+  background-color: #2ecc71;
+}
+
+
+fieldset, form {
+  display: block;
+  margin-bottom: 55px;
+}
+
+legend {
+  line-height: 1;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input {
+  display: inline-block;
+  width: 220px;
+}
+
+input[type="text"] {
+  width: 80px;
+  height: 38px;
+}
+
+input[type="radio"] {
+}
+
+label{
+  float: left;
+}
 
 
 
