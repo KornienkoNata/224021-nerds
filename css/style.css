@@ -40,8 +40,8 @@ body {
 
 .container {
   width: 1160px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-header {
@@ -66,7 +66,6 @@ body {
   float: left;
   width: 161px;
   min-height: 65px;
-
 }
 
 .main-navigation {
@@ -82,7 +81,7 @@ body {
   text-transform:  uppercase;
 }
 
-.main-navigation li a {
+.main-navigation a {
   text-decoration: none;
   color: #000;
 }
@@ -90,17 +89,14 @@ body {
 .user-basket {
   float: right;
   padding-top:26px;
-  background: url(../img/cart.png) no-repeat 0px 30px;
-  text-transform:  uppercase;
-
-  width: 110px;
 }
 
-.user-basket a{
+.user-basket a {
   padding-left: 34px;
   text-decoration: none;
+  text-transform:  uppercase;
+  background: url(../img/cart.png) no-repeat center left;
   color: #000;
-  height: 15px;
 }
 
 .slider1 {
@@ -110,9 +106,9 @@ body {
   }
 
 .slider2 {
-  background: url(../img/slider-2.jpg) no-repeat right top;
-  height: 362px;
   padding-top: 70px;
+  height: 362px;
+  background: url(../img/slider-2.jpg) no-repeat right top;
   }
 
 .slider3 {
@@ -130,10 +126,13 @@ body {
   position: relative;
 }
 
+.sliders p{
+  width: 500px;
+}
 
 .btn {
   display: block;
-  height: 50px;
+  padding-bottom: 30px;
   width:240px;
   background: #fb565a;
 }
@@ -143,21 +142,16 @@ body {
   top:68%;
   left: 50%;
   transform: translateX(-50%);
+  margin: 0;/*не могу понять про дефолтные стили, скинь пожалуйста ссылку почитать на эту тему*/
 }
 
 .header-slider-switch li {
   display: inline-block;
   vertical-align: middle;
-}
-
-.header-slider-switch a {
-  display: inline-block;
   padding: 10px;
   margin: 5px;
-  vertical-align: middle;
   border-radius: 10px;
-  background: white;
-  text-decoration: none;
+  background: #ffffff;
 }
 
 .services {
@@ -167,8 +161,8 @@ body {
 
 .services-item {
   float: left;
-  margin-right: 100px;
   width: 300px;
+  margin-right: 100px;
 
   /*временно, пока кнопку не сделаю*/
   padding-bottom: 80px;
@@ -230,16 +224,15 @@ body {
 
 .projects {
   padding-bottom: 44px;
-  border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 
 .projects-item {
   float: left;
-  margin-right: 40px;
   width: 260px;
-  vertical-align: middle;
+  margin-right: 40px;
   text-align: center;
 }
 
@@ -250,6 +243,7 @@ body {
 .catalog-sidebar {
   float:left;
   width: 260px;
+  margin-top: 30px;
  }
 
 .catalog-content {
@@ -263,7 +257,6 @@ body {
 .map {
   position: relative;
   margin-bottom: 37px;
-  height: 416px;
 }
 
 
@@ -285,8 +278,7 @@ body {
   top:10%;
   left: 50%;
   transform: translateX(-586px);
-  background: white;
-  z-index: 1;
+  background: #ffffff;
 }
 
 .feedback {
@@ -305,8 +297,7 @@ body {
 .social-btn {
   display: inline-block;
   margin-right: 12px;
-  width: 80px;
-  height: 80px;
+  padding: 40px;
   vertical-align: middle;
   border-radius: 80px;
   background: #e1e1e1;
@@ -335,33 +326,18 @@ body {
 
 [hidden] { display: none; }
 
-
 .main-header-catalog {
   padding-top: 1px;
   margin-bottom: 26px;
   background-color: #eeeeee;
 }
 
-.catalog-content {
-  float: right;
-  width: 760px;
-}
-
-.catalog-sidebar {
-  float:left;
-  margin-top: 30px;
-  width: 260px;
- }
-
 .sorting-list {
-  display: block;
   float: left;
 }
 
 .sorting h2 {
   float: left;
-  display: inline-block;
-  vertical-align: bottom;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
@@ -370,20 +346,20 @@ body {
 
 .sorting-list li {
   display: inline-block;
-  vertical-align: bottom;
   margin-right: 22px;
+  vertical-align: bottom;
 }
 .sorting-list li:last-child {
   margin-right: 0;
 }
 
-.sorting-list li a {
+.sorting-list a {
   display: inline-block;
   vertical-align: bottom;
+  font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-  font-size: 14px;
 }
 
 
@@ -393,21 +369,21 @@ body {
 
 .sorting-item-down {
   display: inline-block;
-  background: url(../img/sort-down.png) no-repeat;
   width: 9px;
   height: 9px;
+  background: url(../img/sort-down.png) no-repeat;
 }
 
 .sorting-item-up {
-  background: url(../img/sort-up.png) no-repeat;
   width: 9px;
   height: 9px;
+  background: url(../img/sort-up.png) no-repeat;
 }
 
 .sorting-list-direction {
   float: right;
-  padding-left: 0px;
   margin-top: 10px;
+  padding-left: 0px;
 }
 
 .sorting-list-direction li {
@@ -417,7 +393,8 @@ body {
 
 .templates {
   font-size: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
+  margin-top: 40px;
 }
 
 .templates-item {
@@ -425,51 +402,38 @@ body {
   display: inline-block;
   width: 360px;
   margin-right: 40px;
-  margin-top: 40px;
-  background: #f4f4f4;
-  padding-top: 40px;
+  margin-bottom: 36px;
   border-radius: 5px;
+  background: #f4f4f4;
 }
 
 .templates-item:nth-child(even) {
   margin-right: 0px;
 }
+
 .switch {
-  position: absolute;
-  top:5px;
-  left: 5px;
+  padding: 8px 5px;
 }
-
-ul.switch {
-  padding-left: 5px;
-}
-
 
 .switch li {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.switch a {
   display: inline-block;
   padding: 7px;
   margin: 5px;
   vertical-align: middle;
   border-radius: 10px;
-  background: white;
   text-decoration: none;
+  background: #ffffff;
 }
 
 .price {
   position: absolute;
+  padding-bottom: 50px;
   display: none;
-  background: #eeeeee;
   width: 360px;
-  height: 231px;
-  left:0px;
-  top:385px;
-  color: #000;
+  bottom: 0;
   font-size: 16px;
+  color: #000;
+  background: #eeeeee;
 }
 
 .templates-item:hover .price {
@@ -477,20 +441,19 @@ ul.switch {
 }
 
 .pagination {
-  width: 443px;
+  width: 460px;
   padding-left: 0px;
 }
 
 .pagination li {
   display: inline-block;
-  padding: 0px 11px;
   min-width: 20px;
-  height: 40px;
-  line-height: 40px;
+  padding: 0px 10px;
   vertical-align: middle;
-  background: #eeeeee;
+  line-height: 40px;
   text-align: center;
   font-weight: bold;
+  background: #eeeeee;
   color: #000;
 }
 
@@ -500,7 +463,6 @@ ul.switch {
 }
 
 .pagination .prev {
-
 }
 
 .pagination .next {
@@ -540,14 +502,13 @@ input {
 
 input[type="text"] {
   width: 80px;
-  height: 38px;
+  padding: 7px 0px;
 }
 
 input[type="radio"] {
 }
 
-label{
-  float: left;
+label {
 }
 
 
