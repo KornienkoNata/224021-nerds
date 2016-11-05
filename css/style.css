@@ -193,16 +193,43 @@ li.active {
   border-radius: 5px;
 }
 
-.btn-red{
+.btn-red {
   background: #fb565a;
 }
 
-.btn-green{
+.btn-red:hover {
+  background: #e74246;
+}
+
+.btn-red:active {
+  background: #d7373b;
+  color:#e1787a;
+}
+
+.btn-green {
   background: #00ca74;
 }
 
-.btn-yellow{
+.btn-green:hover {
+  background: #00bc6c;
+}
+
+.btn-green:active {
+  background: #00aa62;
+  color:#64c090;
+}
+
+.btn-yellow {
   background: #efc84a;
+}
+
+.btn-yellow:hover {
+  background: #eab534;
+}
+
+.btn-yellow:active {
+  background: #e5a722;
+  color:#ecc277;
 }
 
 a.btn {
@@ -401,6 +428,14 @@ ul.header-slider-switch {
   margin-right: 40px;
   text-align: center;
   opacity: 0.3;
+}
+
+.projects-item:hover {
+  opacity: 1;
+}
+
+.projects-item:active {
+  opacity: 0.1;
 }
 
 .projects-item:last-child {
