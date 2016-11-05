@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: 'Roboto','Arial', 'Helvetica', 'sans-serif';
+  font-family: "Roboto","Arial", "Helvetica", "sans-serif";
   font-size: 16px;
   background: #ffffff;
   color: #000000
@@ -68,91 +68,177 @@ body {
   min-height: 65px;
 }
 
+.header-logo img {
+  width: 161px;
+}
+
 .main-navigation {
   float: left;
   margin-left: 161px;
 }
 
+.main-navigation ul {
+  float: left;
+  margin: 0;
+  padding-top: 28px;
+  list-style: none;
+  font-size: 0;
+}
+
+
 .main-navigation li {
   display: inline-block;
-  margin-right: 42px;
-  padding-top: 10px;
+  margin-right: 48px;
+  padding-bottom: 7px;
   vertical-align: top;
   text-transform:  uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+li.active {
+  border-bottom: 2px solid #fb565a;
 }
 
 .main-navigation a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  opacity: 0.3;
 }
 
 .user-basket {
   float: right;
-  padding-top:26px;
+  max-width: 140px;
 }
 
-.user-basket a {
-  padding-left: 34px;
+.basket {
+  position: relative;
+  display: inline-block;
+  padding-top: 28px;
+  padding-left: 41px;
+  vertical-align: top;
   text-decoration: none;
-  text-transform:  uppercase;
-  background: url(../img/cart.png) no-repeat center left;
-  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+.basket::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 32px;
+  left: 1px;
+  background: url(../img/cart.png) no-repeat;
+}
+
+.user-basket a:hover {
+  color: #fb565a;
+}
+
+.user-basket a:active{
+  opacity: 0.3;
 }
 
 .slider1 {
-  padding-top: 70px;
-  height: 362px;
+  padding-top: 80px;
+  height: 350px;
   background: url(../img/slider-1.jpg) no-repeat right top;
   }
 
 .slider2 {
-  padding-top: 70px;
-  height: 362px;
+  padding-top: 80px;
+  height: 350px;
   background: url(../img/slider-2.jpg) no-repeat right top;
   }
 
 .slider3 {
-  padding-top: 70px;
-  height: 362px;
+  padding-top: 80px;
+  height: 350px;
   background: url(../img/slider-2.jpg) no-repeat right top;
 }
 
 .sliders h2 {
   display: block;
-  margin:0px;
+  margin: 0px;
 }
 
 .sliders {
   position: relative;
+  margin-top: -6px;
 }
 
 .sliders p{
   width: 500px;
+  color: #283136;
+  padding-top: 10px;
 }
 
 .btn {
   display: block;
-  padding-bottom: 30px;
-  width:240px;
+  width: 212px;
+  margin-top: 38px;
+  margin-left: 0px;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.btn-red{
   background: #fb565a;
+}
+
+.btn-green{
+  background: #00ca74;
+}
+
+.btn-yellow{
+  background: #efc84a;
+}
+
+a.btn {
+ text-transform:  uppercase;
+ text-decoration: none;
+ text-align: center;
+ color: white;
+
 }
 
 .header-slider-switch {
   position: absolute;
-  top:68%;
+  top: 74%;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0;/*не могу понять про дефолтные стили, скинь пожалуйста ссылку почитать на эту тему*/
+  font-size: 0px;
+}
+
+ul.header-slider-switch {
+  padding: 0;
+  margin: 0;
 }
 
 .header-slider-switch li {
   display: inline-block;
   vertical-align: middle;
-  padding: 10px;
-  margin: 5px;
+  padding: 9px;
+  margin-right: 15px;
   border-radius: 10px;
   background: #ffffff;
 }
+
+.header-slider-switch li:last-child {
+  margin-right: 0px;
+}
+
 
 .services {
   margin-bottom: 40px;
@@ -163,19 +249,51 @@ body {
   float: left;
   width: 300px;
   margin-right: 100px;
-
-  /*временно, пока кнопку не сделаю*/
   padding-bottom: 80px;
 }
 
 .service-img {
   margin: 0;
+  width: 300px;
+  height: 146px;
 }
 
 .services-item:last-child {
   margin-right: 0;
 }
 
+
+.services-item h2 {
+  margin: 0;
+  padding-top: 25px;
+  line-height: 1.25;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform:  uppercase;
+}
+
+.services-item p{
+  width: 260px;
+}
+
+.services-item .btn{
+  display: block;
+  margin-top: 29px;
+  margin-left: 0px;
+  padding: 12px 14px;
+  border-radius: 5px;
+  width: 132px;
+}
+
+.content-logo{
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.content-logo img{
+  width: 360px;
+  height: 208px;
+}
 
 .header-bottom h2 {
   line-height: 1;
@@ -190,10 +308,7 @@ body {
 
 .content {
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 46px;
-
- /*временно, отступ от списка*/
-  padding-bottom: 77px;
+  padding-bottom: 50px;
 }
 
 .description {
@@ -201,9 +316,33 @@ body {
   width: 700px;
 }
 
+.description p {
+  width: 660px;
+}
+
 .description h2 {
-  font-size: 42px;
+  margin: 33px 0px;
+  font-size: 45px;
   line-height: 1;
+  font-weight: bold;
+}
+
+.content b {
+  display: block;
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+
+.red-line-list {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.red-line-list li{
+  list-style-type: none;
+  background: url(../img/line.png) no-repeat left center;
+  padding-left: 35px;
+  margin-bottom: 23px;
 }
 
 .about-us {
@@ -211,20 +350,47 @@ body {
   width: 400px;
 }
 
+.about-us b {
+  margin-left: 58px;
+  padding-top: 10px;
+}
+
 .features {
+  margin-left: 40px;
   font-size: 0px;
 }
 
 .features-item {
   display: inline-block;
-  width: 130px;
+  margin-right: 19px;
+  width: 100px;
   vertical-align: top;
   font-size: 16px;
 }
 
+.features-item:last-child {
+  margin-right: 0px;
+}
+
+.features-item h2 {
+  padding-top: 30px;
+  margin: 0;
+  font-size: 44px;
+}
+
+.features-item p {
+  margin-top: 9px;
+  margin-left: 1px;
+  padding: 0;
+  line-height: 1.125;
+  text-align: left;
+}
+
+
 .projects {
-  padding-bottom: 44px;
+  margin-top: 60px;
   margin-bottom: 80px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -234,6 +400,7 @@ body {
   width: 260px;
   margin-right: 40px;
   text-align: center;
+  opacity: 0.3;
 }
 
 .projects-item:last-child {
@@ -241,7 +408,7 @@ body {
 }
 
 .catalog-sidebar {
-  float:left;
+  float: left;
   width: 260px;
   margin-top: 30px;
  }
@@ -256,12 +423,14 @@ body {
 
 .map {
   position: relative;
-  margin-bottom: 37px;
+  margin-bottom: 67px;
 }
 
 
 .map-contact .btn {
   display: block;
+  margin-bottom: 40px;
+  width: 186px;
 }
 
 .map iframe {
@@ -273,12 +442,20 @@ body {
 .map-contact {
   position: absolute;
   width: 270px;
-  padding-top: 54px;
+  padding-top: 30px;
   padding-left: 49px;
-  top:10%;
+  top: 10%;
   left: 50%;
   transform: translateX(-586px);
   background: #ffffff;
+  color: #666666;
+}
+
+p.contact-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
 }
 
 .feedback {
@@ -294,17 +471,36 @@ body {
   width: 320px;
 }
 
+.social-slogan {
+}
+
+.social-slogan p{
+  color: #444444;
+  font-size:18px;
+  margin: 0px;
+  margin-left: 80px;
+}
+
+p.action {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+}
 .social-btn {
+  position: relative;
   display: inline-block;
-  margin-right: 12px;
-  padding: 40px;
+  margin-right: 9px;
+  padding: 44px;
   vertical-align: middle;
   border-radius: 80px;
   background: #e1e1e1;
 }
 
 .social-btn .social-btn-vk {
-  background: url(../img/vk.png) no-repeat 26px 15px;
+  position: absolute;
+  width: 26px;
+  height: 15px;
+  background: url(../img/vk.png); /*Этот блок не выводится вообще*/
 }
 
 .social-btn .social-btn-fb {
@@ -359,7 +555,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 
@@ -392,9 +588,9 @@ body {
 }
 
 .templates {
-  font-size: 0px;
   margin-bottom: 24px;
   margin-top: 40px;
+  font-size: 0px;
 }
 
 .templates-item {
@@ -454,12 +650,12 @@ body {
   text-align: center;
   font-weight: bold;
   background: #eeeeee;
-  color: #000;
+  color: #000000;
 }
 
 .pagination a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .pagination .prev {
