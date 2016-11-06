@@ -532,18 +532,21 @@ p.action {
 }
 
 .social-btn .social-btn-vk {
-  position: absolute;
   width: 26px;
   height: 15px;
   background: url(../img/vk.png); /*Этот блок не выводится вообще*/
 }
 
 .social-btn .social-btn-fb {
-  background: url(../img/fb.png) no-repeat 12px 22px;
+  width: 12px;
+  height: 22px;
+  background: url(../img/fb.png) no-repeat;
 }
 
 .social-btn .social-btn-insta {
-  background: url(../img/insta.png) no-repeat 21px 21px;
+  width: 21px;
+  height: 21px;
+  background: url(../img/insta.png) no-repeat;
 }
 
 .social-slogan {
@@ -658,13 +661,42 @@ p.action {
 
 .price {
   position: absolute;
-  padding-bottom: 50px;
+  padding-bottom: 73px;
   display: none;
   width: 360px;
   bottom: 0;
   font-size: 16px;
   color: #000;
   background: #eeeeee;
+}
+
+.price a {
+  margin-top: 29px;
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.price p {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  font-size: 17px;
+  line-height: 1.125;
+  text-align: center;
+  color: #666666;
+}
+
+.price .btn{
+  display: block;
+  margin-top: 29px auto;
+  padding: 12px 14px;
+  border-radius: 5px;
+  width: 132px;
 }
 
 .templates-item:hover .price {
