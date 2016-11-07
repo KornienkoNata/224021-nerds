@@ -191,6 +191,7 @@ li.active {
   margin-left: 0px;
   padding: 14px;
   border-radius: 5px;
+  color:#ffffff;
 }
 
 .btn-red {
@@ -204,6 +205,7 @@ li.active {
 .btn-red:active {
   background: #d7373b;
   color:#e1787a;
+  box-shadow: 0px -4px 0px 0px #c13135;
 }
 
 .btn-green {
@@ -217,6 +219,7 @@ li.active {
 .btn-green:active {
   background: #00aa62;
   color:#64c090;
+  box-shadow: 0px -4px 0px 0px #009958;
 }
 
 .btn-yellow {
@@ -230,6 +233,7 @@ li.active {
 .btn-yellow:active {
   background: #e5a722;
   color:#ecc277;
+  box-shadow: 0px -4px 0px 0px #ce961f
 }
 
 a.btn {
@@ -531,19 +535,19 @@ p.action {
   background: #e1e1e1;
 }
 
-.social-btn .social-btn-vk {
+.social-btn-vk {
   width: 26px;
   height: 15px;
   background: url(../img/vk.png); /*Этот блок не выводится вообще*/
 }
 
-.social-btn .social-btn-fb {
+.social-btn-fb {
   width: 12px;
   height: 22px;
   background: url(../img/fb.png) no-repeat;
 }
 
-.social-btn .social-btn-insta {
+.social-btn-insta {
   width: 21px;
   height: 21px;
   background: url(../img/insta.png) no-repeat;
@@ -661,12 +665,10 @@ p.action {
 
 .price {
   position: absolute;
-  padding-bottom: 73px;
   display: none;
   width: 360px;
   bottom: 0;
   font-size: 16px;
-  color: #000;
   background: #eeeeee;
 }
 
@@ -677,7 +679,6 @@ p.action {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  color: #000000;
   text-align: center;
 }
 
@@ -691,13 +692,16 @@ p.action {
   color: #666666;
 }
 
-.price .btn{
-  display: block;
-  margin-top: 29px auto;
-  padding: 12px 14px;
+.price .btn {
+  width:200px;
+  margin-left: 80px;
+  padding: 12px 0px;
   border-radius: 5px;
-  width: 132px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: normal;
 }
+
 
 .templates-item:hover .price {
   display: block;
@@ -711,14 +715,24 @@ p.action {
 .pagination li {
   display: inline-block;
   min-width: 20px;
-  padding: 0px 10px;
+  padding: 5px 15px;
   vertical-align: middle;
   line-height: 40px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
+  border-radius: 5px;
+  text-transform: uppercase;
   background: #eeeeee;
   color: #000000;
+  margin-right: 7px;
 }
+
+li.list-current{
+  border: 3px solid #dbdbdb;
+  background: #ffffff;
+  padding: 2px 14px;
+}
+
 
 .pagination a {
   text-decoration: none;
@@ -729,7 +743,7 @@ p.action {
 }
 
 .pagination .next {
-  padding: 0px 60px;
+  padding: 5px 78px;
 }
 
 .pagination .current {
