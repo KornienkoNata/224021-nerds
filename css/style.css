@@ -52,6 +52,7 @@ body {
 
 .header-top {
   margin-top: 49px;
+  z-index: 1;
 }
 
 .main-header-catalog h1 {
@@ -65,7 +66,7 @@ body {
 .header-logo {
   float: left;
   width: 161px;
-  min-height: 65px;
+  height: 65px;
 }
 
 .header-logo img {
@@ -175,7 +176,7 @@ li.active {
 
 .sliders {
   position: relative;
-  margin-top: -6px;
+  /*margin-top: -6px;*/
 }
 
 .sliders p{
@@ -324,6 +325,10 @@ ul.header-slider-switch {
 .content-logo img{
   width: 360px;
   height: 208px;
+}
+
+.header-bottom{
+  z-index: 2;
 }
 
 .header-bottom h2 {
@@ -510,6 +515,11 @@ p.contact-name {
   width: 320px;
 }
 
+/*.cart { спрайт корзины - надо ли сделать?
+  background-position: -10px -56px;
+  width: 15px; height: 15px;
+}*/
+
 .social-slogan {
 }
 
@@ -525,33 +535,59 @@ p.action {
   font-weight: bold;
   color: #000000;
 }
+
 .social-btn {
   position: relative;
   display: inline-block;
-  margin-right: 9px;
-  padding: 44px;
+  margin-right: 8px;
+  padding: 39px;
   vertical-align: middle;
+  font-size: 0;
   border-radius: 80px;
   background: #e1e1e1;
 }
 
-.social-btn-vk {
+.social-btn:hover {
+  background: #e74246;
+  transition: all 350ms;
+  -o-transition: all 350ms;
+  -moz-transition: all 350ms;
+  -webkit-transition: all 350ms;
+}
+
+.social-btn:active {
+  color: #e37376;
+  background: #d7373b;
+  box-shadow: inset 0px 4px 0px 0px #c13135;
+}
+
+.social-btn::before {
+  content:"";
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background:url('../img/sprite.png') no-repeat;
+}
+
+.social-btn-vk::before{
+  background-position: -10px -0px;
   width: 26px;
   height: 15px;
-  background: url(../img/vk.png); /*Этот блок не выводится вообще*/
 }
 
-.social-btn-fb {
+.social-btn-fb::before{
+  background-position: -10px -81px;
   width: 12px;
   height: 22px;
-  background: url(../img/fb.png) no-repeat;
 }
 
-.social-btn-insta {
+.social-btn-inst::before{
+  background-position: -10px -25px;
   width: 21px;
   height: 21px;
-  background: url(../img/insta.png) no-repeat;
 }
+
 
 .social-slogan {
   float: right;
