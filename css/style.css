@@ -638,9 +638,24 @@ p.contact-name {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color:#000000;
 }
 
+.sorting-list a{
+  opacity: 0.3;
+}
+
+.sorting-item-current a{
+  opacity: 1;
+}
+
+.sorting-list a:hover {
+  opacity: 0.6;
+}
+
+.sorting-list a:active {
+  opacity: 1;
+}
 
 .sorting-list-type {
   margin-left: 229px;
@@ -648,19 +663,32 @@ p.contact-name {
 
 .sorting-item-down { /*попробую треугольники c помощью css сделать*/
   display: inline-block;
-  width: 9px;
-  height: 9px;
-  background: url(../img/sort-down.png) no-repeat;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #000000;
 }
 
 .sorting-item-up {
-  width: 9px;
-  height: 9px;
-  background: url(../img/sort-up.png) no-repeat;
-  opacity: 0.3;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #000000;
 }
 
+.sorting-item-down:hover{
+  opacity: 0.4
+}
 
+.sorting-item-up:hover{
+  opacity: 0.4;
+}
+
+ .sorting-item-current{
+  opacity: 1;
+}
 
 .sorting-list-direction {
   float: right;
@@ -724,6 +752,7 @@ p.contact-name {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  color: #000000;
 }
 
 .price p {
