@@ -507,12 +507,56 @@ p.contact-name {
 }
 
 .feedback {
-  display: none;
+  display: block;
+  float:left
   width: 960px;
   height: 590px;
+  background-color: #ffffff;
   padding-left: 100px;
   padding-top: 68px;
 }
+
+.feedback h2{
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.feedback-form-group{
+  display: block;
+  padding: 7px 28px;
+  margin-bottom: 47px;
+}
+
+.feedback-form-group {
+  float: left;
+  margin-right: 4px;
+}
+
+.feedback-form-group:focus {
+  color:#000;
+}
+
+.feedback-form-group input[type="text"] {
+  width: 320px;
+  height: 25px;
+  border: 2px solid #d7dcde;
+}
+
+.feedback-form-group label {
+  display: block;
+  font-weight: 500;
+  color: #000000;
+}
+
+.feedback-form-group label:focus {
+  color:red;
+}
+
+textarea {
+width: 700px;
+height: 115px;
+}
+
 
 .footer-social {
   float: left;
@@ -844,7 +888,7 @@ li.list-current {
 fieldset, form {
   display: block;
   margin-top: 4px;
-  margin-bottom: 55px;
+  margin-bottom: 49px;
   border: none;
 }
 
