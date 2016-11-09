@@ -68,11 +68,11 @@ body {
   width: 161px;
   height: 65px;
 }
-.header-logo:hover{
+.header-logo:hover {
   opacity: 0.8;
 }
 
-.header-logo:active{
+.header-logo:active {
   opacity: 0.3;
 }
 
@@ -100,7 +100,7 @@ body {
   margin-right: 48px;
   padding-bottom: 7px;
   vertical-align: top;
-  text-transform:  uppercase;
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
 }
@@ -138,7 +138,6 @@ li.active {
   font-size: 16px;
   font-weight: bold;
   color: #000000;
-
 }
 
 .basket::before {
@@ -155,25 +154,23 @@ li.active {
   color: #fb565a;
 }
 
-.user-basket a:active{
+.user-basket a:active {
   opacity: 0.3;
 }
 
 .slider1 {
   padding-top: 80px;
-  height: 353px;
   background: url(../img/slider-1.jpg) no-repeat right top;
-  }
+}
 
 .slider2 {
   padding-top: 77px;
-  height: 353px;
+  padding-bottom: 80px;
   background: url(../img/slider-2.jpg) no-repeat right top;
-  }
+}
 
 .slider3 {
   padding-top: 80px;
-  height: 353px;
   background: url(../img/slider-2.jpg) no-repeat right top;
 }
 
@@ -184,10 +181,9 @@ li.active {
 
 .sliders {
   position: relative;
-  /*margin-top: -6px;*/
 }
 
-.sliders p{
+.sliders p {
   width: 500px;
   color: #283136;
   padding-top: 10px;
@@ -200,7 +196,7 @@ li.active {
   margin-left: 0px;
   padding: 14px;
   border-radius: 5px;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .btn-red {
@@ -213,7 +209,7 @@ li.active {
 
 .btn-red:active {
   background: #d7373b;
-  color:#e1787a;
+  color: #e1787a;
   box-shadow: inset 0px 4px 0px 0px #c13135;
 }
 
@@ -227,7 +223,7 @@ li.active {
 
 .btn-green:active {
   background: #00aa62;
-  color:#64c090;
+  color: #64c090;
   box-shadow: inset 0px 4px 0px 0px #009958;
 }
 
@@ -241,12 +237,12 @@ li.active {
 
 .btn-yellow:active {
   background: #e5a722;
-  color:#ecc277;
+  color: #ecc277;
   box-shadow: inset 0px 4px 0px 0px #ce961f
 }
 
 a.btn {
- text-transform:  uppercase;
+ text-transform: uppercase;
  text-decoration: none;
  text-align: center;
  color: white;
@@ -309,14 +305,14 @@ ul.header-slider-switch {
   line-height: 1.25;
   font-size: 25px;
   font-weight: bold;
-  text-transform:  uppercase;
+  text-transform: uppercase;
 }
 
-.services-item p{
+.services-item p {
   width: 260px;
 }
 
-.services-item .btn{
+.services-item .btn {
   display: block;
   margin-top: 29px;
   margin-left: 0px;
@@ -325,17 +321,17 @@ ul.header-slider-switch {
   width: 132px;
 }
 
-.content-logo{
+.content-logo {
   text-align: right;
   margin-bottom: 20px;
 }
 
-.content-logo img{
+.content-logo img {
   width: 360px;
   height: 208px;
 }
 
-.header-bottom{
+.header-bottom {
   z-index: 2;
 }
 
@@ -382,7 +378,7 @@ ul.header-slider-switch {
   padding: 0;
 }
 
-.red-line-list li{
+.red-line-list li {
   list-style-type: none;
   background: url(../img/line.png) no-repeat left center;
   padding-left: 35px;
@@ -529,16 +525,17 @@ p.contact-name {
 }*/
 
 .social-slogan {
+
 }
 
-.social-slogan p{
+.social-slogan p {
   color: #444444;
-  font-size:16px;
+  font-size: 16px;
   margin: 0px;
   margin-left: 40px;
 }
 
-p.action {
+.social-slogan .action { /*либо p.action*/
   font-size: 36px;
   font-weight: bold;
   color: #000000;
@@ -570,28 +567,28 @@ p.action {
 }
 
 .social-btn::before {
-  content:"";
+  content: "";
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  background:url('../img/sprite.png') no-repeat;
+  background: url('../img/sprite.png') no-repeat;
 }
 
-.social-btn-vk::before{
-  background-position: -10px -0px;
+.social-btn-vk::before {
+  background-position: -10px -33px;
   width: 26px;
   height: 15px;
 }
 
-.social-btn-fb::before{
-  background-position: -10px -81px;
+.social-btn-fb::before {
+  background-position: -10px -145px;
   width: 12px;
   height: 22px;
 }
 
-.social-btn-inst::before{
-  background-position: -10px -25px;
+.social-btn-inst::before {
+  background-position: -10px -89px;
   width: 21px;
   height: 21px;
 }
@@ -649,7 +646,7 @@ p.action {
   margin-left: 229px;
 }
 
-.sorting-item-down {
+.sorting-item-down { /*попробую треугольники c помощью css сделать*/
   display: inline-block;
   width: 9px;
   height: 9px;
@@ -660,7 +657,10 @@ p.action {
   width: 9px;
   height: 9px;
   background: url(../img/sort-up.png) no-repeat;
+  opacity: 0.3;
 }
+
+
 
 .sorting-list-direction {
   float: right;
@@ -737,7 +737,7 @@ p.action {
 }
 
 .price .btn {
-  width:200px;
+  width: 200px;
   margin-left: 80px;
   padding: 12px 0px;
   border-radius: 5px;
@@ -762,7 +762,7 @@ p.action {
   font-size: 0px;
 }
 
-li.list-current{
+li.list-current {
   padding: 2px 17px 2px 18px;
   border: 3px solid #dbdbdb;
   background: #ffffff;
@@ -794,7 +794,7 @@ li.list-current{
   background-color: #dfdfdf;
 }
 
-.next a{
+.next a {
   padding-left: 78px;
   padding-right: 78px;
 }
@@ -804,7 +804,7 @@ li.list-current{
   box-shadow: inset 0px 4px 0px 0px #bfbfbf;
 }
 
-.next a:active{
+.next a:active {
   padding-left: 78px;
   padding-right: 78px;
   background: #d5d5d5;
@@ -816,6 +816,7 @@ fieldset, form {
   display: block;
   margin-top: 4px;
   margin-bottom: 55px;
+  border: none;
 }
 
 legend {
@@ -846,29 +847,79 @@ input[type="radio"] {
 input[type="checkbox"] + label {
   position: relative;
   display: block;
-  margin:10px 0;
-  line-height: 20px;
+  margin: 20px 0;
   padding-left: 45px;
+  line-height: 20px;
   cursor: pointer;
 }
 
 input[type="checkbox"] + label::before {
-  position: absolute;
-  top: 0;
-  left:0;
   content: "";
-  width: 16px;
-  height: 16px;
-  border: 2px solid red;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top:  0;
+  left: 0;
+  border: 2px solid #b8b8b8;
+  border-radius: 5px;
 }
 
 input[type="checkbox"]:checked + label::after {
-  position: absolute;
   content: "";
-  width: 10px;
-  height: 10px;
-  background-color: green;
-  top:5px;
-  left:5px;
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  top: 0px;
+  left: 0px;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -10px -0px;
+  opacity: 0.4;
 }
 
+
+
+input[type="radio"] + label {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+  padding-left: 45px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left:0;
+  border: 3px solid #b8b8b8;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 8px;
+  background: #b8b8b8;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.submit {
+  display: block;
+  width: 212px;
+  margin-top: 39px;
+  margin-left: 0px;
+  padding: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: none;
+  color: #000000;
+}
