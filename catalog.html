@@ -48,9 +48,27 @@
         <form name="selection" method="post" action="http://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input type="range" value="0" max="15000"/>
-            <label>От <input type="text" name="min_price" value="0"></label>
-            <label>до <input type="text" name="max_price" value="15000"></label>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+
+                  </div>
+                </div>
+                <div class="toggle toggle-min">
+
+                </div>
+                <div class="toggle toggle-max">
+
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0">
+                </label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000">
+                </label>
+              </div>
+          </div>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -74,7 +92,7 @@
             <input type="checkbox" id="basket" value="basket">
             <label for id="basket">Корзина</label>
           </fieldset>
-          <button class="submit btn-gray" type="submit">Показать</button>
+          <button class="submit next" type="submit">Показать</button>
         </form>
       </aside>
       <section class="catalog-content">

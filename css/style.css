@@ -55,9 +55,16 @@ body {
   z-index: 1;
 }
 
+
+.main-header-catalog {
+  padding-top: 1px;
+  margin-bottom: 28px;
+  background-color: #eeeeee;
+}
+
 .main-header-catalog h1 {
   display: inline-block;
-  padding: 19px 0px 60px 216px;
+  padding: 27px 1px 58px 216px;
   vertical-align: middle;
   font-size: 55px;
   font-weight: 500;
@@ -107,6 +114,7 @@ body {
 
 li.active {
   border-bottom: 2px solid #fb565a;
+  color:#000000;
 }
 
 .main-navigation a {
@@ -130,8 +138,9 @@ li.active {
 .basket {
   position: relative;
   display: inline-block;
-  padding-top: 28px;
-  padding-left: 41px;
+  margin-top: 8px;
+  padding-top: 20px;
+  padding-left: 39px;
   vertical-align: top;
   text-decoration: none;
   text-transform: uppercase;
@@ -145,9 +154,11 @@ li.active {
   content: "";
   width: 15px;
   height: 15px;
-  top: 32px;
-  left: 1px;
-  background: url(../img/cart.png) no-repeat;
+  top: 32;
+  top: 25px;
+  left: 0;
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -11px -120px;
   opacity: 0.3;
 }
 
@@ -211,7 +222,7 @@ li.active {
 .btn-red:active {
   background: #d7373b;
   color: #e1787a;
-  box-shadow: inset 0px 4px 0px 0px #c13135;
+  box-shadow: inset 0px 3px 0px 0px #c13135;
 }
 
 .btn-green {
@@ -225,7 +236,7 @@ li.active {
 .btn-green:active {
   background: #00aa62;
   color: #64c090;
-  box-shadow: inset 0px 4px 0px 0px #009958;
+  box-shadow: inset 0px 3px 0px 0px #009958;
 }
 
 .btn-yellow {
@@ -239,7 +250,7 @@ li.active {
 .btn-yellow:active {
   background: #e5a722;
   color: #ecc277;
-  box-shadow: inset 0px 4px 0px 0px #ce961f
+  box-shadow: inset 0px 3px 0px 0px #ce961f
 }
 
 a.btn {
@@ -383,10 +394,20 @@ ul.header-slider-switch {
 }
 
 .red-line-list li {
+  position: relative;
   list-style-type: none;
-  background: url(../img/line.png) no-repeat left center;
   padding-left: 35px;
   margin-bottom: 23px;
+}
+
+.red-line-list li:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .about-us {
@@ -479,7 +500,7 @@ ul.header-slider-switch {
 .catalog-sidebar {
   float: left;
   width: 260px;
-  margin-top: 30px;
+  margin-top: 28px;
  }
 
 .catalog-content {
@@ -674,21 +695,17 @@ height: 115px;
 
 [hidden] { display: none; }
 
-.main-header-catalog {
-  padding-top: 1px;
-  margin-bottom: 26px;
-  background-color: #eeeeee;
-}
 
 .sorting-list {
   float: left;
+  margin-left:0;
 }
 
 .sorting h2 {
   float: left;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 
@@ -771,20 +788,103 @@ height: 115px;
 
 }
 
+.range-filter{
+  width: 260px;
+  margin-top: 55px;
+  margin-bottom: 33px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 21px;
+  padding-left: 21px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 21px;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 8px;
+  padding: 10px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+label{
+  color: #283136;
+  font-weight: 400;
+}
+
 .templates {
   margin-bottom: 24px;
-  margin-top: 40px;
+  margin-top: 38px;
   font-size: 0px;
 }
 
 .templates-item {
   position: relative;
   display: inline-block;
-  width: 358px;
+  width: 360px;
   margin-right: 40px;
   margin-bottom: 36px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid #e9e9e9;
+  box-sizing: border-box;
   background: #e9e9e9;
 }
 
@@ -816,6 +916,7 @@ height: 115px;
   background: #eeeeee;
 }
 
+
 .price a {
   margin-top: 29px;
   display: block;
@@ -845,6 +946,7 @@ height: 115px;
   margin-bottom: 40px;
   font-size: 16px;
   font-weight: normal;
+  color: #ffffff;
 }
 
 .templates-item:hover .price {
@@ -902,40 +1004,35 @@ li.list-current {
 
 .pagination a:active {
   background: #d5d5d5;
-  box-shadow: inset 0px 4px 0px 0px #bfbfbf;
+  box-shadow: inset 0px 3px 0px 0px #bfbfbf;
+  color: #a9a9a9;
 }
 
 .next a:active {
   padding-left: 78px;
   padding-right: 78px;
   background: #d5d5d5;
-  box-shadow: inset 0px 4px 0px 0px #bfbfbf;
+  box-shadow: inset 0px 3px 0px 0px #bfbfbf;
+  color:#a9a9a9;
 }
 
 
 fieldset, form {
+  margin: 0;
+  padding:0;
   display: block;
   margin-top: 4px;
-  margin-bottom: 49px;
+  margin-bottom: 32px;
   border: none;
 }
 
 legend {
   line-height: 1;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-input {
-  display: inline-block;
-  width: 220px;
-}
-
-input[type="text"] {
-  width: 80px;
-  padding: 7px 0px;
-}
 
 input[type="checkbox"] {
   display: none;
@@ -965,7 +1062,7 @@ input[type="checkbox"] + label::before {
   border-radius: 5px;
 }
 
-input[type="checkbox"]:checked + label::after {
+input[type="checkbox"]:checked + label::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -975,6 +1072,7 @@ input[type="checkbox"]:checked + label::after {
   background: url('../img/sprite.png') no-repeat;
   background-position: -10px -0px;
   opacity: 0.4;
+  border:none;
 }
 
 
@@ -1014,13 +1112,23 @@ input[type="radio"]:checked + label::after {
 
 .submit {
   display: block;
-  width: 212px;
+  padding: 14px 87px;
   margin-top: 39px;
   margin-left: 0px;
-  padding: 14px;
-  border-radius: 5px;
+  border-radius: 3px;
   text-transform: uppercase;
   border: 1px solid transparent;
   outline: none;
+  background: #eeeeee;
   color: #000000;
+}
+
+.submit:active{
+  background: #d5d5d5;
+  box-shadow: inset 0px 2px 0px 0px #bfbfbf;
+  color:#a9a9a9;
+}
+
+.submit:hover{
+  background-color: #dfdfdf;
 }
