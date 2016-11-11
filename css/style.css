@@ -68,6 +68,7 @@ body {
   vertical-align: middle;
   font-size: 55px;
   font-weight: 500;
+  color: #000000;
 }
 
 .header-logo {
@@ -549,43 +550,54 @@ p.contact-name {
 }
 
 .feedback {
+  margin: 0 auto;
   display: block;
-  float:left
-  width: 960px;
-  height: 590px;
-  background-color: #ffffff;
-  padding-left: 100px;
-  padding-top: 68px;
+  width: 780px;
+  background-color: #32a4ae;
+  padding: 57px  80px 40px 100px;
 }
 
 .feedback h2{
+  margin:0;
+  margin-bottom: 23px;
+  padding: 0;
   font-size: 46px;
   font-weight: 500;
+  color: #000000;
 }
+
 
 .feedback-form-group{
   display: block;
-  padding: 7px 28px;
   margin-bottom: 47px;
 }
 
-.feedback-form-group {
+.block-name{
   float: left;
-  margin-right: 4px;
+}
+
+.block-email{
+  float: right;
+}
+
+.block-message{
+  float: left;
 }
 
 .feedback-form-group:focus {
-  color:#000;
+  color:#000000;
 }
 
 .feedback-form-group input[type="text"] {
-  width: 320px;
+  width: 346px;
+  padding: 10px 0px 10px 13px;
   height: 25px;
   border: 2px solid #d7dcde;
 }
 
 .feedback-form-group label {
   display: block;
+  margin-bottom: 7px;
   font-weight: 500;
   color: #000000;
 }
@@ -698,7 +710,7 @@ height: 115px;
 
 .sorting-list {
   float: left;
-  margin-left:0;
+  margin-left: 0;
 }
 
 .sorting h2 {
@@ -706,6 +718,7 @@ height: 115px;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #000000;
 }
 
 
@@ -1031,6 +1044,7 @@ legend {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  color:#000000;
 }
 
 
@@ -1112,6 +1126,7 @@ input[type="radio"]:checked + label::after {
 
 .submit {
   display: block;
+  float: left;
   padding: 14px 87px;
   margin-top: 39px;
   margin-left: 0px;
