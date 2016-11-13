@@ -1095,6 +1095,7 @@ li.list-current {
 .next a {
   padding-left: 78px;
   padding-right: 78px;
+  cursor: pointer;
 }
 
 .pagination a:active {
@@ -1117,7 +1118,7 @@ fieldset, form {
   padding:0;
   display: block;
   margin-top: 4px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   border: none;
 }
 
