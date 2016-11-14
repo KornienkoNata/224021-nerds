@@ -917,7 +917,8 @@ textarea {
 }
 
 .sorting-list-type {
-  margin-left: 229px;
+  margin-left: 267px;
+  padding-left: 0px;
 }
 
 .sorting-item-down { /*попробую треугольники c помощью css сделать*/
@@ -965,14 +966,14 @@ textarea {
   margin-top: 55px;
   margin-bottom: 33px;
 }
-
+/***/
 .range-controls {
   position: relative;
   height: 41px;
-  padding-top: 39px;
+  padding-top: 38px;
   padding-right: 21px;
   padding-left: 21px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   border-radius: 5px;
   background: #f1f1f1;
 }
@@ -990,7 +991,7 @@ textarea {
 
 .range-controls .toggle {
   position: absolute;
-  top: 30px;
+  top: 29px;
   left: 0px;
   width: 4px;
   height: 4px;
@@ -1002,11 +1003,11 @@ textarea {
 }
 
 .range-controls .toggle-min {
-  left: 21px;
+  left: 19px;
 }
 
 .range-controls .toggle-max {
-  left: 145px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1065,14 +1066,14 @@ label{
 }
 
 .switch {
-  padding: 8px 5px;
+  padding: 9px 5px 9px 10px;
 
 }
 
 .switch li {
   display: inline-block;
   padding: 7px;
-  margin: 5px;
+  margin: 3px 4px 5px 5px;
   vertical-align: middle;
   border-radius: 10px;
   text-decoration: none;
@@ -1195,7 +1196,7 @@ fieldset, form {
   padding:0;
   display: block;
   margin-top: 4px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border: none;
 }
 
@@ -1207,6 +1208,9 @@ legend {
   color: #000000;
 }
 
+.indent{
+  margin-top: 33px;
+}
 
 input[type="checkbox"] {
   display: none;
@@ -1220,7 +1224,8 @@ input[type="checkbox"] + label {
   position: relative;
   display: block;
   margin: 20px 0;
-  padding-left: 45px;
+  padding-left: 37px;
+  padding-top: 2px;
   line-height: 20px;
   cursor: pointer;
 }
@@ -1250,12 +1255,12 @@ input[type="checkbox"]:checked + label::before {
 }
 
 
-
 input[type="radio"] + label {
   position: relative;
   display: block;
-  margin: 20px 0;
-  padding-left: 45px;
+  margin: 18px 0;
+  padding-left: 37px;
+  padding-top: 2px;
   line-height: 20px;
   cursor: pointer;
 }
