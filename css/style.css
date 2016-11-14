@@ -632,16 +632,16 @@ p.contact-name {
 
 @keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    transform: translateX(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    transform: translateX(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    transform: translateX(-10px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -661,22 +661,9 @@ p.contact-name {
   animation: shake 0.6s;
 }
 
-
-/*.login {
-  position: relative;
-  display: inline-block;
-  padding: 25px 20px;
-  padding-left: 50px;
-  font-size: 16px;
-  line-height: 20px;
-  vertical-align: top;
-  text-decoration: none;
-}*/
-
-
 .feedback {
-  position: absolute;
-  top:50%;
+  position: fixed;
+  top:10%;
   left:0;
   bottom: :0;
   right:0;
