@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+
   </head>
   <body>
 
@@ -162,13 +164,13 @@
             191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8
             <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn btn-red" href="#">Напишите нам</a>
+          <a class="btn btn-red" href="#">Напишите нам</a><!--<a class="btn btn-red" href="#">Напишите нам</a>-->
         </div>
       </section>
     </main>
 
     <!--Всплывающий блок обратной связи-->
-    <div class="feedback clearfix">
+   <div class="feedback">
        <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
         <h2>Напишите нам</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -188,6 +190,7 @@
           <button class="submit" type="submit">Отправить</button>
         </form>
     </div>
+
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
@@ -201,56 +204,6 @@
         </div>
       </div>
     </footer>
-     <script>
-      var link = document.querySelector(".fullname");
 
-      var popup = document.querySelector(".feedback");
-      var close = popup.querySelector(".feedback-close");
-
-      var form = popup.querySelector("form");
-      var fullname = popup.querySelector("[name=fullname]");
-      var email = popup.querySelector("[name=email]");
-
-      var storage = localStorage.getItem("fullname");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("feedback-show");
-
-        if (storage) {
-          fullname.value = storage;
-          email.focus();
-        } else {
-          fullname.focus();
-        }
-
-      });
-
-      /*close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("feedback-show");
-        popup.classList.remove("modal-error");
-      });
-
-      form.addEventListener("submit", function(event) {
-        if (!fullname.value || !email.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } else {
-          localStorage.setItem("fullname", fullname.value);
-        }
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("feedback-show")) {
-            popup.classList.remove("feedback-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });*/
-    </script>
   </body>
   </html>

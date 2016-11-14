@@ -594,8 +594,11 @@ ul.header-slider-switch {
 
 .map-contact .btn {
   display: block;
-  margin-bottom: 40px;
-  width: 186px;
+  margin-bottom: 49px;
+  margin-top: 40px;
+  width: 220px;
+  padding: 15px 0;
+  border-radius: 3px;
 }
 
 .map iframe {
@@ -607,16 +610,18 @@ ul.header-slider-switch {
 .map-contact {
   position: absolute;
   width: 270px;
-  padding-top: 30px;
-  padding-left: 49px;
+  padding-top: 34px;
+  padding-left: 50px;
   top: 10%;
   left: 50%;
+  line-height: 1.125;
   transform: translateX(-586px);
   background: #ffffff;
   color: #666666;
 }
 
 p.contact-name {
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
@@ -657,13 +662,34 @@ p.contact-name {
 }
 
 
+/*.login {
+  position: relative;
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  text-decoration: none;
+}*/
+
+
 .feedback {
   position: absolute;
+  top:50%;
+  left:0;
+  bottom: :0;
+  right:0;
   margin: 0 auto;
   display: none;
   width: 850px;
   padding: 55px  10px 40px 100px;
+  background: #ffffff;
   box-shadow: 0 0 20px 5px rgba(221, 221, 221, 1);
+}
+
+.feedback button{
+  background: #ffffff;
 }
 
 .feedback-show {
@@ -673,37 +699,28 @@ p.contact-name {
 
 .feedback-close{
   position: absolute;
-  top: 0;
-  right: -34px;
-  width: 22px;
-  height: 22px;
+  top: 90px;
+  right: 93px;
   font-size: 0;
-  background-color: red;
   border: 0;
   cursor: pointer;
+  background: red;
 }
 
 .feedback-close::before,
 .feedback-close::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
-
-  width: 19px;
-  height: 3px;
-  background-color: #d0d0d0;
-  border-radius: 1px;
+  width: 22px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+  background: url('../img/sprite.png') no-repeat;
+  background-position: -10px -58px;
+  opacity: 0.3;
 }
-
-.feedback-close::before {
-  transform: rotate(45deg);
+.feedback-close:hover {
+  opacity: 1;
 }
-
-.feedback-close::after {
-  transform: rotate(-45deg);
-}
-
 
 .feedback h2 {
   margin: 0;

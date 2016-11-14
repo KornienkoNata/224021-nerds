@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <header class="main-header-catalog">
@@ -222,16 +223,17 @@
       </section>
     </main>
      <!--Всплывающий блок обратной связи-->
-    <div class="feedback clearfix">
+    <div class="feedback">
+      <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
       <h2>Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form-group">
           <label for="fullname">Ваше имя:</label>
-          <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста">
+          <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" required>
         </div>
         <div class="feedback-form-group">
           <label for="email">Ваш e-mail: </label>
-          <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа" required>
         </div>
         <div class="feedback-form-group">
           <label for="message">Текст письма: </label>
