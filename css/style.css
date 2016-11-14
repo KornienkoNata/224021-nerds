@@ -688,6 +688,8 @@ p.contact-name {
   position: absolute;
   top: 90px;
   right: 93px;
+  width: 22px;
+  height: 24px;
   font-size: 0;
   border: 0;
   cursor: pointer;
