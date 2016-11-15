@@ -45,20 +45,23 @@ window.onload=function() {
   });
 }
 
-function initMap() {
-    var centerLatLng = new google.maps.LatLng(56.2928515, 43.7866641);
+ function initMap() {
+    var centerLatLng = new google.maps.LatLng(59.938807, 30.323033);
     var mapOptions = {
         center: centerLatLng,
-        zoom: 8
+        zoom: 17
     };
 
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    // Добавляем маркер
-    var marker = new google.maps.Marker({
-        position: centerLatLng,              // Координаты расположения маркера. В данном случае координаты нашего маркера совпадают с центром карты, но разумеется нам никто не мешает создать отдельную переменную и туда поместить другие координаты.
-        map: map,                            // Карта на которую нужно добавить маркер
-        title: "Текст всплывающей подсказки" // (Необязательно) Текст выводимый в момент наведения на маркер
-    });
+
+    /// Добавляем маркер
+var marker = new google.maps.Marker({
+    position: centerLatLng,
+    map: map,
+    title: "NЁRDS DESIGN STUDIO",
+    icon: "img/marker.png"
+});
 }
+
 google.maps.event.addDomListener(window, "load", initMap);
