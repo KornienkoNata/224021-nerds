@@ -529,7 +529,7 @@ ul.header-slider-switch {
 
 
 .projects {
-  margin-top: 60px;
+  margin-top: 62px;
   margin-bottom: 80px;
   padding-bottom: 20px;
   border-bottom: 2px solid #eeeeee;
@@ -595,7 +595,7 @@ ul.header-slider-switch {
 .map-contact .btn {
   display: block;
   margin-bottom: 49px;
-  margin-top: 40px;
+  margin-top: 38px;
   width: 220px;
   padding: 15px 0;
   border-radius: 3px;
@@ -610,8 +610,10 @@ ul.header-slider-switch {
 .map-contact {
   position: absolute;
   width: 270px;
+  margin-left: 5px;
+  margin-top: 13px;
   padding-top: 34px;
-  padding-left: 50px;
+  padding-left: 49px;
   top: 10%;
   left: 50%;
   line-height: 1.125;
@@ -621,13 +623,18 @@ ul.header-slider-switch {
 }
 
 p.contact-name {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 28px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
   color: #000000;
 }
 
+p.contact-address{
+  margin-left: 2px;
+  margin-top: 18px;
+}
 /* Всплывающая форма */
 
 @keyframes bounce {
@@ -1208,8 +1215,9 @@ legend {
   color: #000000;
 }
 
-.indent{
-  margin-top: 33px;
+fieldset:nth-child(3) {
+  margin-top: 52px;
+  margin-left: 1
 }
 
 input[type="checkbox"] {
@@ -1223,11 +1231,15 @@ input[type="radio"] {
 input[type="checkbox"] + label {
   position: relative;
   display: block;
-  margin: 20px 0;
-  padding-left: 37px;
-  padding-top: 2px;
+  margin: 18px 0;
+  padding-left: 36px;
+  padding-top: 3px;
   line-height: 20px;
   cursor: pointer;
+}
+
+input[type="checkbox"]+ label:nth-child(9){
+  padding-top: 0px;
 }
 
 input[type="checkbox"] + label::before {
@@ -1258,8 +1270,8 @@ input[type="checkbox"]:checked + label::before {
 input[type="radio"] + label {
   position: relative;
   display: block;
-  margin: 18px 0;
-  padding-left: 37px;
+  margin: 18px 0px 0px 2px;
+  padding-left: 34px;
   padding-top: 2px;
   line-height: 20px;
   cursor: pointer;
@@ -1298,13 +1310,11 @@ input[type="radio"]:checked + label::before {
   border-radius: 50px;
 }
 
-
-
 .submit {
   display: block;
   float: left;
-  padding: 14px 87px;
-  margin-top: 39px;
+  padding: 15px 87px;
+  margin-top: 4px;
   margin-left: 0px;
   border-radius: 3px;
   text-transform: uppercase;
