@@ -224,7 +224,7 @@ li.active {
   background: #c1c1c1;
 }
 .slide {
-  height: 431px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -259,7 +259,7 @@ li.active {
 }
 
 .slide-text {
-  padding: 78px 0;
+  padding: 79px 0;
 }
 
 .sliders h2 {
@@ -616,7 +616,7 @@ ul.header-slider-switch {
   color: #666666;
 }
 
-p.contact-name {
+.map-contact h2 {
   margin-top: 20px;
   margin-bottom: 28px;
   text-transform: uppercase;
@@ -625,7 +625,7 @@ p.contact-name {
   color: #000000;
 }
 
-p.contact-address{
+.map-contact p{
   margin-left: 2px;
   margin-top: 18px;
 }
@@ -666,9 +666,9 @@ p.contact-address{
 
 .feedback {
   position: fixed;
+  z-index: 1000;
   top:10%;
   left:0;
-  bottom: :0;
   right:0;
   margin: 0 auto;
   display: none;
@@ -798,9 +798,8 @@ textarea:focus{
 .feedback-form .submit {
   margin-top: 10px;
   margin-bottom: 43px;
-  padding: 0;
+  padding: 15px 0;
   width: 260px;
-  height: 50px;
   border-radius: 3px;
   background-color: #fb565a;
   color: #ffffff;

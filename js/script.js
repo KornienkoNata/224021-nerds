@@ -1,4 +1,3 @@
-window.onload=function() {
   var link = document.querySelector(".map-contact .btn");
   var popup = document.querySelector(".feedback");
   var inp_name = document.querySelector(".fullname");
@@ -7,15 +6,15 @@ window.onload=function() {
   var form = popup.querySelector("form");
   var fullname = popup.querySelector("[name=fullname]");
   var email = popup.querySelector("[name=email]");
-  var storage = localStorage.getItem("fullname");
+  var storagename = localStorage.getItem("fullname");
   var storageemail = localStorage.getItem("email");
   var message = popup.querySelector("[name=message]");
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("feedback-show");
-    if (storage) {
-      fullname.value = storage;
+    if (storagename) {
+      fullname.value = storagename;
       email.focus();
       } else {
       fullname.focus();
@@ -65,7 +64,7 @@ window.onload=function() {
       }
     }
   });
-}
+
 
  function initMap() {
     var centerLatLng = new google.maps.LatLng(59.938807, 30.323033);
