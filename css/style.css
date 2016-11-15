@@ -581,7 +581,7 @@ ul.header-slider-switch {
 .catalog-content {
   float: right;
   width: 760px;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
   margin-top: 10px;
 }
 
@@ -594,8 +594,7 @@ ul.header-slider-switch {
 
 .map-contact .btn {
   display: block;
-  margin-bottom: 49px;
-  margin-top: 38px;
+  margin: 38px 0px 49px 1px;
   width: 220px;
   padding: 15px 0;
   border-radius: 3px;
@@ -660,7 +659,9 @@ p.contact-address{
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  border-color: red;
+  /*animation: shake 0.6s;*/
+  background: red;
 }
 
 .feedback {
@@ -675,6 +676,21 @@ p.contact-address{
   padding: 55px  10px 40px 100px;
   background: #ffffff;
   box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.75);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:required {
+}
+
+
+.feedback-form-group input[type="text"]:focus {
+  border: 2px solid #000000;
 }
 
 .feedback button{
@@ -739,10 +755,14 @@ p.contact-address{
 }
 
 .feedback-form-group input[type="text"] {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 10px 14px;
   width: 330px;
   height: 25px;
   border: 2px solid #d7dcde;
+}
+
+.feedback-form-group input[type="text"]:hover {
+  border: 2px solid #b4b9bb;
 }
 
 label#fullname {
@@ -764,6 +784,15 @@ label#fullname {
 textarea {
   width: 753px;
   height: 112px;
+  border: 2px solid #d7dcde;
+  color: #000000;
+}
+textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+textarea:focus{
+  border: 2px solid #000000;
 }
 
 .feedback-form .submit {
@@ -779,6 +808,7 @@ textarea {
 }
 
 .footer-social {
+  margin-top:3px;
   float: left;
   width: 320px;
 }
@@ -792,7 +822,7 @@ textarea {
   color: #444444;
   font-size: 16px;
   margin: 0px;
-  margin-left: 40px;
+  margin-left: 39px;
 }
 
 .social-slogan .action {
