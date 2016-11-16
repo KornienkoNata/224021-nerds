@@ -629,7 +629,7 @@ ul.header-slider-switch {
   margin-left: 2px;
   margin-top: 18px;
 }
-/* Всплывающая форма */
+
 
 @keyframes bounce {
   0%   {
@@ -658,11 +658,7 @@ ul.header-slider-switch {
   }
 }
 
-.modal-error {
-  border-color: red;
-  /*animation: shake 0.6s;*/
-  background: red;
-}
+
 
 .feedback {
   position: fixed;
@@ -685,13 +681,7 @@ button:focus {
     outline: none;
 }
 
-input:required {
-}
 
-
-.feedback-form-group input[type="text"]:focus {
-  border: 2px solid #000000;
-}
 
 .feedback button{
   background: #ffffff;
@@ -700,6 +690,15 @@ input:required {
 .feedback-show {
   display: block;
   animation: bounce 0.6s;
+}
+
+.feedback input[type="text"].modal-error {
+  border: 2px solid #e74246;
+  color:#e74246;
+}
+
+.modal-error-form {
+  animation: shake 0.6s;
 }
 
 .feedback-close{
@@ -765,9 +764,6 @@ input:required {
   border: 2px solid #b4b9bb;
 }
 
-label#fullname {
-  color: red;
-}
 
 .feedback-form-group label {
   display: block;
@@ -775,10 +771,6 @@ label#fullname {
   margin-bottom: 6px;
   font-weight: 500;
   color: #000000;
-}
-
-.feedback-form-group label:focus {
-  color: red;
 }
 
 textarea {
@@ -792,6 +784,10 @@ textarea:hover {
 }
 
 textarea:focus{
+  border: 2px solid #000000;
+}
+
+.feedback-form-group input[type="text"]:focus{
   border: 2px solid #000000;
 }
 
@@ -953,7 +949,7 @@ textarea:focus{
   padding-left: 0px;
 }
 
-.sorting-item-down { /*попробую треугольники c помощью css сделать*/
+
   display: inline-block;
   width: 0;
   height: 0;
@@ -998,7 +994,7 @@ textarea:focus{
   margin-top: 55px;
   margin-bottom: 33px;
 }
-/***/
+
 .range-controls {
   position: relative;
   height: 41px;
@@ -1358,3 +1354,4 @@ input[type="radio"]:checked + label::before {
 .submit:hover{
   background-color: #dfdfdf;
 }
+
