@@ -698,7 +698,6 @@ button:focus {
 
 .feedback input[type="text"].modal-error {
   border: 2px solid #e74246;
-  color:#e74246;
 }
 
 .modal-error-form {
