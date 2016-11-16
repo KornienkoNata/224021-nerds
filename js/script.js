@@ -27,27 +27,28 @@
     if (storageemail) {
       email.value = storageemail;
       if (temp == 1) { message.focus();}
-      else {fullname.focus();}
-      } else {
-      email.focus();
-    }
+      else {
+        fullname.focus();
+        }
+      }
   });
 
-  close.addEventListener("click", function(event) {
+    close.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("feedback-show");
     popup.classList.remove("modal-error-form");
+    inp_email.classList.remove("modal-error");
+    inp_name.classList.remove("modal-error");
   });
 
   form.addEventListener("submit", function(event) {
     if (!fullname.value) {
       event.preventDefault();
       inp_name.classList.remove("modal-error");
-      inp_name.offsetWidth = fullname.offsetWidth;
+      /*inp_name.offsetWidth = fullname.offsetWidth; это наверное не нужно*/
       inp_name.classList.add("modal-error");
-
       popup.classList.remove("modal-error-form");
-      popup.offsetWidth = popup.offsetWidth;
+      /*popup.offsetWidth = popup.offsetWidth;*/
       popup.classList.add("modal-error-form");
     } else {
       localStorage.setItem("fullname", fullname.value);
@@ -56,17 +57,19 @@
      if (!email.value) {
       event.preventDefault();
       inp_email.classList.remove("modal-error");
-      inp_email.offsetWidth = inp_email.offsetWidth;
+      /*inp_email.offsetWidth = inp_email.offsetWidth;*/
       inp_email.classList.add("modal-error");
 
       popup.classList.remove("modal-error-form");
-      popup.offsetWidth = popup.offsetWidth;
+      /*popup.offsetWidth = popup.offsetWidth;*/
       popup.classList.add("modal-error-form");
     }
     else {
       localStorage.setItem("email", email.value);
     };
+
   });
+
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
