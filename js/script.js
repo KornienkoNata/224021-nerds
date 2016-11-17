@@ -9,8 +9,6 @@
   var storagename = localStorage.getItem("fullname");
   var storageemail = localStorage.getItem("email");
   var message = popup.querySelector("[name=message]");
-  var input = popup.querySelector(".feedback input");
-  var label = popup.querySelector(".feedback label");
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
@@ -45,10 +43,9 @@
     if (!fullname.value) {
       event.preventDefault();
       inp_name.classList.remove("modal-error");
-      /*inp_name.offsetWidth = fullname.offsetWidth; это наверное не нужно*/
       inp_name.classList.add("modal-error");
       popup.classList.remove("modal-error-form");
-      /*popup.offsetWidth = popup.offsetWidth;*/
+      popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error-form");
     } else {
       localStorage.setItem("fullname", fullname.value);
@@ -57,11 +54,9 @@
      if (!email.value) {
       event.preventDefault();
       inp_email.classList.remove("modal-error");
-      /*inp_email.offsetWidth = inp_email.offsetWidth;*/
       inp_email.classList.add("modal-error");
-
       popup.classList.remove("modal-error-form");
-      /*popup.offsetWidth = popup.offsetWidth;*/
+      popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error-form");
     }
     else {
