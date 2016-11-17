@@ -115,7 +115,7 @@ body {
 
 li.active {
   border-bottom: 2px solid #fb565a;
-  color:#000000;
+  color: #000000;
 }
 
 .main-navigation a {
@@ -554,7 +554,7 @@ ul.header-slider-switch {
   position: absolute;
   top: 0px;
   left:278px;
-  border:1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .projects-item img {
@@ -637,7 +637,7 @@ ul.header-slider-switch {
 
 
 @keyframes bounce {
-  0%   {
+  0% {
     transform: translateX(-2000px);
   }
   70%  {
@@ -668,9 +668,9 @@ ul.header-slider-switch {
 .feedback {
   position: fixed;
   z-index: 1000;
-  top:10%;
-  left:0;
-  right:0;
+  top: 10%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   display: none;
   width: 850px;
@@ -713,7 +713,6 @@ button:focus {
   font-size: 0;
   border: 0;
   cursor: pointer;
-  background: red;
 }
 
 .feedback-close::before,
@@ -928,7 +927,7 @@ textarea:focus {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color:#000000;
+  color: #000000;
 }
 
 .sorting-list a {
@@ -1220,7 +1219,7 @@ li.list-current {
   padding-right: 78px;
   background: #d5d5d5;
   box-shadow: inset 0px 3px 0px 0px #bfbfbf;
-  color:#a9a9a9;
+  color: #a9a9a9;
 }
 
 
@@ -1273,9 +1272,10 @@ input[type="checkbox"]:disabled + label {
 input[type="checkbox"]:disabled + label:hover::before {
     opacity: 0.3;
     cursor: default;
+
 }
 
-input[type="checkbox"]+ label:nth-child(9){
+input[type="checkbox"]+ label:nth-child(9) {
   padding-top: 0px;
 }
 
@@ -1305,11 +1305,15 @@ input[type="checkbox"]:checked + label::before {
   border: none;
 }
 
-input[type="checkbox"]:not(disabled) + label:hover::before{
+input[type="checkbox"]:not(disabled) + label:hover {
+  color: #000000;
+ }
+
+input[type="checkbox"]:not(disabled) + label:hover::before {
   opacity: 1;
  }
 
-input[type="checkbox"]:not(:checked) + label:hover::before{
+input[type="checkbox"]:not(:checked) + label:hover::before {
   border: 2px solid #4d4d4d;
 }
 
@@ -1322,6 +1326,10 @@ input[type="radio"] + label {
   line-height: 20px;
   cursor: pointer;
 }
+
+input[type="radio"]:not(disabled) + label:hover {
+  color: #000000;
+ }
 
 input[type="radio"]:disabled + label {
   opacity: 0.3;
@@ -1398,7 +1406,7 @@ input[type="radio"]:checked + label::before {
 .submit:active {
   background: #d5d5d5;
   box-shadow: inset 0px 2px 0px 0px #bfbfbf;
-  color:#a9a9a9;
+  color: #a9a9a9;
 }
 
 .submit:hover {
