@@ -267,6 +267,7 @@ li.active {
 .slide {
   display:none;
 }
+
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
@@ -309,7 +310,7 @@ li.active {
 
 .btn-red {
   background: #fb565a;
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .btn-red:hover {
@@ -357,11 +358,11 @@ li.active {
 }
 
 a.btn {
- text-transform: uppercase;
- text-decoration: none;
- text-align: center;
- color: white;
- cursor: pointer
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  cursor: pointer
 }
 
 .header-slider-switch {
@@ -435,7 +436,7 @@ ul.header-slider-switch {
   padding: 13px 14px;
   border-radius: 3px;
   width: 132px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .content-logo {
@@ -579,9 +580,9 @@ ul.header-slider-switch {
 
 
 .projects-item:not(:last-child)::after {
-  height: 52px;
   content: "";
   position: absolute;
+  height: 52px;
   top: 0px;
   left:278px;
   border: 1px solid #eeeeee;
@@ -631,9 +632,8 @@ ul.header-slider-switch {
   width: 220px;
   padding: 15px 0;
   border-radius: 3px;
-  cursor: pointer
+  cursor: pointer;
 }
-
 
 .map-contact {
   position: absolute;
@@ -711,7 +711,7 @@ ul.header-slider-switch {
 input:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 
@@ -731,7 +731,8 @@ button:focus {
 }
 
 .modal-error-form {
-  animation: shake 0.6s;
+  -webkit-animation:bounce 0.6s;
+    animation: shake 0.6s;
 }
 
 .feedback-close {
@@ -841,10 +842,6 @@ textarea:focus {
   width: 320px;
 }
 
-
-.social-slogan {
-}
-
 .social-slogan p {
   color: #444444;
   font-size: 16px;
@@ -867,15 +864,16 @@ textarea:focus {
   font-size: 0;
   border-radius: 80px;
   background: #e1e1e1;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .social-btn:hover {
   background: #e74246;
   transition: all 350ms;
   -o-transition: all 350ms;
-  -moz-transition: all 350ms;
-  -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+      -webkit-transition: all 350ms;
+         transition: all 350ms;
 }
 
 .social-btn:active {
@@ -917,7 +915,6 @@ textarea:focus {
   height: 21px;
 }
 
-
 .social-slogan {
   float: right;
   width: 800px;
@@ -942,7 +939,6 @@ textarea:focus {
   font-weight: 700;
   color: #000000;
 }
-
 
 .sorting-list li {
   display: inline-block;
@@ -969,7 +965,6 @@ textarea:focus {
 .sorting-item-current a {
   opacity: 1;
 }
-
 
 .sorting-list li:not(.sorting-item-current):hover {
   opacity: 0.6;
@@ -1002,7 +997,7 @@ textarea:focus {
 }
 
 .sorting-item-down:hover {
-  opacity: 0.4
+  opacity: 0.4;
 }
 
 .sorting-item-up:hover {
@@ -1021,7 +1016,6 @@ textarea:focus {
 
 .sorting-list-direction li {
   margin-right: 17px;
-
 }
 
 .range-filter {
@@ -1062,9 +1056,9 @@ textarea:focus {
   border: 8px solid #fff;
   border-radius: 50%;
   background: #ababab;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.1);;
-    -moz-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.1);;
-      box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.1);;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.1);
+    -moz-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.1);
+      box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.1);
 }
 
 .range-controls .toggle-min {
@@ -1103,7 +1097,7 @@ textarea:focus {
   background: #f1f1f1;
 }
 
-label{
+label {
   color: #283136;
   font-weight: 400;
 }
@@ -1198,7 +1192,7 @@ label{
   font-size: 16px;
   font-weight: normal;
   color: #ffffff;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .templates-item:hover .price {
@@ -1241,7 +1235,10 @@ li.list-current {
   color: #000000;
 }
 
-.pagination .prev {
+.prev a{
+  padding-left: 78px;
+  padding-right: 78px;
+  cursor: pointer;
 }
 
 
@@ -1293,7 +1290,7 @@ legend {
 
 fieldset:nth-child(3) {
   margin-top: 52px;
-  margin-left: 1
+  margin-left: 1px;
 }
 
 input[type="checkbox"] {
@@ -1316,13 +1313,13 @@ input[type="checkbox"] + label {
 }
 
 input[type="checkbox"]:disabled + label {
-    opacity: 0.3;
-    cursor: default;
+  opacity: 0.3;
+  cursor: default;
 }
 
 input[type="checkbox"]:disabled + label:hover::before {
-    opacity: 0.3;
-    cursor: default;
+  opacity: 0.3;
+  cursor: default;
 
 }
 
