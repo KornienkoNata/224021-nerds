@@ -809,9 +809,12 @@ button:focus {
 textarea {
   width: 753px;
   height: 112px;
+  padding-left: 13px;
+  padding-top: 11px;
   border: 2px solid #d7dcde;
   color: #000000;
 }
+
 textarea:hover {
   border: 2px solid #b4b9bb;
 }
