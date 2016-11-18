@@ -6,7 +6,7 @@
     <title>Дизайн-студия - Нёрдс. Магазин готовых шаблонов.</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header-catalog">
@@ -20,18 +20,10 @@
           </div>
           <nav class="main-navigation">
             <ul>
-              <li>
-                <a href="index.html">Студия</a>
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li class="active">
-                Магазин
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
+              <li><a href="index.html">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li class="active">Магазин</li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="user-basket">
@@ -51,13 +43,10 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar">
-                  </div>
+                  <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min">
-                </div>
-                <div class="toggle toggle-max">
-                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input name="min-price" type="text" value="0">
@@ -118,7 +107,6 @@
             </ul>
             <img src="img/img-sedona.jpg" width="358" height="576" alt="Сайт Sedona">
             <div class="price">
-              <!--По спецификации - название это ссылка-->
               <h2><a href="#">Sedona</a></h2>
               <p>Информационный сайт для туристов</p>
               <a class="btn btn-red" href="#" title="Цена">9 900 руб.</a>
@@ -213,9 +201,7 @@
         <div id="map" class="map"></div>
         <div class="map-contact">
           <h2>Nёrds design studio</h2>
-          <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
           <a class="btn btn-red" href="#">Напишите нам</a>
         </div>
@@ -228,11 +214,11 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form-group">
           <label for="fullname">Ваше имя:</label>
-          <input type="text" name="fullname" id="fullname" class="fullname" placeholder="Представьтесь, пожалуйста" required">
+          <input type="text" name="fullname" id="fullname" class="fullname" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="feedback-form-group">
           <label for="email">Ваш e-mail: </label>
-          <input type="text" name="email" id="email" class="email" placeholder="Для отправки ответа" required">
+          <input type="text" name="email" id="email" class="email" placeholder="Для отправки ответа">
         </div>
         <div class="feedback-form-group">
           <label for="message">Текст письма: </label>
@@ -240,7 +226,8 @@
         </div>
         <button class="submit" type="submit">Отправить</button>
       </form>
-</div>
+    </div>
+
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
@@ -256,6 +243,6 @@
     </footer>
   <script src="https://maps.googleapis.com/maps/api/js?
   key=AIzaSyC4JVs4LmxsAOTqMde7jNuvvIPcgs_CNxs"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
   </html>

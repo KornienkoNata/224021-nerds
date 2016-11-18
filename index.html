@@ -6,7 +6,7 @@
     <title>Дизайн-студия - Нёрдс.</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -20,18 +20,10 @@
           </div>
           <nav class="main-navigation">
             <ul>
-              <li class="active">
-                Студия
-              </li>
-              <li>
-                <a href="#">Клиенты</a>
-              </li>
-              <li>
-                <a href="catalog.html">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
+              <li class="active">Студия</li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
           <div class="user-basket">
@@ -69,7 +61,7 @@
                   <h2>Только ночь,<br>только хардкор</h2>
                   <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
                   <a class="btn btn-red" href="#" title="Узнать больше">Узнать больше</a>
-               </div>
+                </div>
               </div>
             </div>
           </div>
@@ -77,13 +69,12 @@
       </div>
     </header>
 
-
     <main class="main-container">
       <div class="container">
         <section class="services clearfix">
           <div class="services-item">
             <figure class="service-img">
-              <img src="img/service1.jpg" alt="Веб-сайты">
+              <img src="img/service1.jpg" alt="Веб-сайты" width="300" height="146">
             </figure>
             <h2>Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
@@ -91,7 +82,7 @@
           </div>
           <div class="services-item">
             <figure class="service-img">
-              <img src="img/service2.jpg" alt="Приложения">
+              <img src="img/service2.jpg" alt="Приложения" width="300" height="146">
             </figure>
             <h2>Приложения</h2>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
@@ -99,7 +90,7 @@
           </div>
           <div class="services-item">
             <figure class="service-img">
-              <img src="img/service3.jpg" alt="Презентации">
+              <img src="img/service3.jpg" alt="Презентации" width="300" height="146">
             </figure>
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -120,7 +111,7 @@
           </article>
           <section class="about-us">
             <div class="content-logo">
-              <img src="img/content-logo.jpg" alt="Дизайн-студия Нёрдс">
+              <img src="img/content-logo.jpg" alt="Дизайн-студия Нёрдс" width="360" height="208">
             </div>
             <b>C 2004 года любим точность во всем:</b>
             <div class="features">
@@ -158,11 +149,9 @@
         <div id="map" class="map"></div>
         <div class="map-contact">
           <h2>Nёrds design studio</h2>
-          <p>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn btn-red" href="#">Напишите нам</a>
+          <a class="btn btn-red" href="form.html">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -174,11 +163,11 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="feedback-form-group">
           <label for="fullname">Ваше имя:</label>
-          <input type="text" name="fullname" id="fullname" class="fullname" placeholder="Представьтесь, пожалуйста" required">
+          <input type="text" name="fullname" id="fullname" class="fullname" placeholder="Представьтесь, пожалуйста">
         </div>
         <div class="feedback-form-group">
           <label for="email">Ваш e-mail: </label>
-          <input type="text" name="email" id="email" class="email" placeholder="Для отправки ответа" required">
+          <input type="text" name="email" id="email" class="email" placeholder="Для отправки ответа">
         </div>
         <div class="feedback-form-group">
           <label for="message">Текст письма: </label>
@@ -186,8 +175,8 @@
         </div>
         <button class="submit" type="submit">Отправить</button>
       </form>
-</div>
     </div>
+
 
     <footer class="main-footer">
       <div class="container clearfix">
@@ -203,6 +192,6 @@
       </div>
     </footer>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4JVs4LmxsAOTqMde7jNuvvIPcgs_CNxs"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
   </html>
