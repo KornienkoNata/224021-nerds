@@ -1,4 +1,5 @@
   var link = document.querySelector(".map-contact .btn");
+  var subm = document.querySelector(".feedback .submit");
   var popup = document.querySelector(".feedback");
   var inp_name = popup.querySelector(".fullname");
   var inp_email = popup.querySelector(".email");
@@ -9,6 +10,7 @@
   var storagename = localStorage.getItem("fullname");
   var storageemail = localStorage.getItem("email");
   var message = popup.querySelector("[name=message]");
+  var press = 0;
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
@@ -31,7 +33,12 @@
       }
   });
 
-    close.addEventListener("click", function(event) {
+
+  subm.addEventListener("click", function(ev) {
+    press = 1; //чтобы при первом вводе не было класса modal-error на input-ах
+  });
+
+  close.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("feedback-show");
     popup.classList.remove("modal-error-form");
@@ -64,6 +71,18 @@
     };
 
   });
+
+    inp_name.addEventListener('focusout', function(event) {
+    if (press==1) {
+    event.preventDefault();
+    inp_name.classList.toggle('modal-error', !inp_name.value);};
+});
+
+inp_email.addEventListener('focusout', function(event) {
+    if (press==1) {
+    event.preventDefault();
+    inp_email.classList.toggle('modal-error', !inp_email.value);};
+});
 
 
   window.addEventListener("keydown", function(event) {
